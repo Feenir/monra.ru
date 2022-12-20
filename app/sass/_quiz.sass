@@ -1,0 +1,92 @@
+.quiz
+	margin-bottom: 150px
+	overflow: hidden
+
+	&__wrapper
+		background-color: #E3EAED
+		border-radius: 26px
+		padding: 62px 51px 47px 76px
+		overflow: hidden
+		@media (max-width: 1080px)
+			padding: 36px 36px 0 36px
+			position: relative
+		@media (max-width: 560px)
+			padding: 18px 18px 0 18px
+
+
+
+	&__title-inner
+		display: flex
+		align-items: flex-start
+		justify-content: space-between
+		margin-bottom: 70px
+		@media (max-width: 991px)
+			margin-bottom: 42px
+
+	&__title
+		position: relative
+		font-size: 48px
+		font-weight: 600
+		line-height: 61px
+		max-width: 990px
+		z-index: 1
+		@media (max-width: 991px)
+			font-size: 32px
+			line-height: 40px
+		@media (max-width: 560px)
+			font-size: 24px
+			line-height: 30px
+		&:before
+			position: absolute
+			display: block
+			content: ''
+			top: -100px
+			left: -50px
+			width: 415px
+			height: 415px
+			background: #F0B36A
+			opacity: 0.4
+			filter: blur(100px)
+			z-index: -1
+
+		& span
+			color: rgba(12, 20, 77, 1)
+
+	&__counter
+		display: flex
+		flex-wrap: nowrap
+		position: relative
+		line-height: 1
+		font-size: 128px
+		font-weight: 600
+		color: #0C144D
+		@media (max-width: 991px)
+			font-size: 50px
+		@media (max-width: 560px)
+			display: none
+
+
+	&__total
+		opacity: .2
+		&:before
+			content: '/'
+
+	&__progress
+		position: relative
+		width: 100%
+		height: 4px
+		background-color: rgba(211, 219, 222, 1)
+		border-radius: 4px
+		z-index: 11
+
+	&__progress-bar
+		position: absolute
+		width: 25%
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		background-color: rgba(12, 20, 77, 1)
+		border-radius: 4px
+		transition: width .5s linear
+

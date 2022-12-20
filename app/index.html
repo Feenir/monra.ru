@@ -1,0 +1,563 @@
+<!doctype html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Document</title>
+
+</head>
+
+<body>
+<div class="header">
+	<div class="container">
+		<div class="header__box">
+
+			<div class="header__logo-wrapper">
+				<a class="logo" href="#">
+					<svg class="logo-svg logo-desk">
+						<use xlink:href="img/svg/set.svg#logo"></use>
+					</svg>
+
+					<svg class="logo-svg logo-table">
+						<use xlink:href="img/svg/set.svg#logo-table"></use>
+					</svg>
+
+
+					<svg class="logo-svg logo-mobile">
+						<use xlink:href="img/svg/set.svg#logo-mobile"></use>
+					</svg>
+				</a>
+
+				<p class="header__description">
+					Находимся в Москве и работаем по всей России
+				</p>
+
+			</div>
+			<button class="header__button header__button--mobile button jsPopup-open" type="button">Обратный звонок</button>
+			<div class="header__right-inner">
+				<div class="header__contacts-wrapper">
+					<a class="header__contacts" href="tel:+79108778521">+7 910 877 85 21</a>
+
+					<a class="header__contacts" href="mailto:bajjdingeranna@gmail.com">bajjdingeranna@gmail.com</a>
+				</div>
+
+				<div class="header__menu-wrapper">
+
+					<div class="header__button-inner">
+						<button class="header__button header__button--desk button jsPopup-open" type="button">Обратный звонок</button>
+
+						<button class="header__button header__menu button" type="button">
+							<span class="header__menu-main">Меню</span>
+							<span class="header__menu-arrow">
+					</span>
+						</button>
+					</div>
+
+					<p class="header__provider">У вас уже есть поставщик?</p>
+				</div>
+
+			</div>
+
+
+		</div>
+	</div>
+</div>
+
+<main>
+	<section class="hero">
+		<div class="hero__wrapper">
+			<div class="hero__inner">
+				<h1 class="hero__title"><span>ЛКМ</span> и <span>масла</span> для <span class="desk">профессионального</span> <span class="mob">профессиональ-<br>ного</span>  покрытия и защиты древесины</h1>
+				<p class="hero__text">Разрабатываем продукты премиум-класса
+					в собственных лабораториях по индивидуальной рецептуре</p>
+				<a class="hero__button hero__button--desk button js-scroll" href="#quiz" type="button">Рассчитать стоимость состава</a>
+			</div>
+			<div class="hero__slider">
+
+				<div class="hero__container">
+					<div class="hero__swiper swiper heroSlider">
+						<div class="hero__swiper-wrapper  swiper-wrapper">
+							<div class="hero__swiper-slide swiper-slide hero__swiper-slide--first">
+								<h2 class="hero__slide-title">Грунтовка</h2>
+
+
+							</div>
+							<div class="hero__swiper-slide swiper-slide hero__swiper-slide--second" style="background-image: url('../img/hero/slider/hero-slider-2.png')">
+								<h2 class="hero__slide-title">Клей</h2>
+							</div>
+							<div class="hero__swiper-slide swiper-slide hero__swiper-slide--second" style="background-image: url('../img/hero/slider/hero-slider-2.png')">
+								<h2 class="hero__slide-title">Клей</h2>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="hero__arrow-inner">
+					<div class="hero__prev slider-arrow slider-arrow--prev">
+						<svg class="logo-svg">
+							<use xlink:href="img/svg/set.svg#slider-arrow"></use>
+						</svg>
+					</div>
+					<div class="hero__next slider-arrow slider-arrow--next">
+						<svg class="logo-svg">
+							<use xlink:href="img/svg/set.svg#slider-arrow"></use>
+						</svg>
+
+					</div>
+				</div>
+
+
+			</div>
+			<a class="hero__button hero__button--mob button js-scroll" href="#quiz">Рассчитать стоимость состава</a>
+		</div>
+
+	</section>
+
+	<section class="quiz" id="quiz">
+		<div class="container">
+			<div class="quiz__wrapper">
+
+				<div class="table-padding">
+					<div class="quiz__title-inner">
+
+						<h2 class="quiz__title">
+							Ответьте на <span>4 вопроса</span>, чтобы получить расчет с персональной <span>скидкой</span> на первый заказ
+						</h2>
+
+						<div class="quiz__counter">
+							<span class="quiz__current">1</span>
+							<span class="quiz__total">4</span>
+						</div>
+					</div>
+
+
+					<div class="quiz__progress">
+						<span class="quiz__progress-bar"></span>
+					</div>
+				</div>
+
+				<form class="quiz__steps steps" novalidate>
+
+					<div class="steps__stage steps__stage--active" id="step-stage1">
+						<h3 class="steps__title">Укажите сферу деятельности</h3>
+
+						<div class="steps__inner">
+							<input class="steps__input" id="step1" type="checkbox" name="steps-one">
+
+							<label class="steps__label" for="step1">
+							<span class="steps__img-inner">
+								<img src="img/quiz/quiz-1-1.jpg" alt="Опросник">
+							</span>
+								<span class="steps__title-quiz">Мебельное, столярное производство</span>
+
+							</label>
+							<input class="steps__input" id="step2" type="checkbox" name="steps-one">
+
+							<label class="steps__label" for="step2">
+							<span class="steps__img-inner">
+								<img src="img/quiz/quiz-1.jpg" alt="Опросник">
+							</span>
+								<span class="steps__title-quiz">Производство паркета</span>
+
+							</label>
+							<input class="steps__input" id="step3" type="checkbox" name="steps-one">
+
+							<label class="steps__label" for="step3">
+							<span class="steps__img-inner">
+								<img src="img/quiz/quiz-2.jpg" alt="Опросник">
+							</span>
+								<span class="steps__title-quiz">Подрядчик, управляющий проектом</span>
+
+							</label>
+							<input class="steps__input" id="step4" type="checkbox" name="steps-one">
+							<label class="steps__label" for="step4">
+							<span class="steps__img-inner">
+								<img src="img/quiz/quiz-2-2.jpg" alt="Опросник">
+							</span>
+								<span class="steps__title-quiz">Дизайнер / Архитектор</span>
+
+							</label>
+							<input class="steps__input" id="step5" type="checkbox" name="steps-one">
+							<label class="steps__label" for="step5">
+							<span class="steps__img-inner">
+								<img src="img/quiz/quiz-2-3.jpg" alt="Опросник">
+							</span>
+								<span class="steps__title-quiz">Другое</span>
+
+							</label>
+						</div>
+						<div class="steps__button-inner steps__button-inner--one">
+
+							<button class="steps__button steps__button--next button" id="steps__button--next1" type="button" data-num="1">Далее
+								<svg viewBox="0 0 34 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M1 7.5H32.5M32.5 7.5L26 1M32.5 7.5L26 14" stroke="#F0F0F0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+							</button>
+						</div>
+					</div>
+
+					<div class="steps__stage" id="step-stage2">
+						<h3 class="steps__title steps__title--has-text">Какие вам необходимы продукты?</h3>
+						<p class="steps__text">Вы можете выбрать несколько вариантов</p>
+
+						<div class="steps__second-wrapper">
+							<div class="steps__second-box">
+								<div class="steps__inner steps__inner--second">
+									<input class="steps__second-input" id="second1" type="checkbox" name="second-input">
+									<label class="steps__second-label" for="second1">
+										<span class="steps__fake-checkbox"></span>
+										<span class="steps__second-name">Клей</span>
+									</label>
+
+									<input class="steps__second-input" id="second2" type="checkbox" name="second-input">
+									<label class="steps__second-label" for="second2">
+										<span class="steps__fake-checkbox"></span>
+										<span class="steps__second-name">Лак</span>
+									</label>
+
+									<input class="steps__second-input" id="second3" type="checkbox" name="second-input">
+									<label class="steps__second-label" for="second3">
+										<span class="steps__fake-checkbox"></span>
+										<span class="steps__second-name">Грунт</span>
+									</label>
+
+									<input class="steps__second-input" id="second4" type="checkbox" name="second-input">
+									<label class="steps__second-label" for="second4">
+										<span class="steps__fake-checkbox"></span>
+										<span class="steps__second-name">Эмаль</span>
+									</label>
+
+									<input class="steps__second-input" id="second5" type="checkbox" name="second-input">
+									<label class="steps__second-label" for="second5">
+										<span class="steps__fake-checkbox"></span>
+										<span class="steps__second-name">Морилка</span>
+									</label>
+
+									<input class="steps__second-input" id="second6" type="checkbox" name="second-input">
+									<label class="steps__second-label" for="second6">
+										<span class="steps__fake-checkbox"></span>
+										<span class="steps__second-name">Масло</span>
+									</label>
+
+								</div>
+								<p class="steps__second-wrapper-text">У нас есть готовые решения на складе и мы можем разработать индивидуальные составы в собственной лаборатории под вашу задачу</p>
+							</div>
+
+							<div class="steps__second-box steps__second-box--right">
+								<div class="steps__second-box-img">
+									<img src="img/quiz/quiz-second-1.png" alt="Картинка">
+								</div>
+								<div class="steps__button-inner">
+									<button class="steps__button steps__button--prev button" id="steps__button--prev1" type="button">
+										<svg viewBox="0 0 34 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M1 7.5H32.5M32.5 7.5L26 1M32.5 7.5L26 14" stroke="#F0F0F0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+										Назад
+									</button>
+									<button class="steps__button steps__button--next button" id="steps__button--next2" type="button" data-num="2">Далее
+										<svg viewBox="0 0 34 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M1 7.5H32.5M32.5 7.5L26 1M32.5 7.5L26 14" stroke="#F0F0F0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+									</button>
+								</div>
+							</div>
+						</div>
+
+
+					</div>
+
+					<div class="steps__stage" id="step-stage3">
+						<h3 class="steps__title">Какая ориентировочная площадь покрытия?</h3>
+						<div class="steps__inner steps__inner--third">
+							<div class="steps__third-wrapper">
+								<div class="steps__third-box">
+									<div class="range">
+										<label class="range__label-hidden">
+											<input class="steps__range-hidden" id="range-steps-input" type="range" min="1" max="1000" value="">
+										</label>
+
+										<div class="range__wrapper">
+											<div class="range__stripe" id="range-steps-fake"></div>
+											<div class="range__total">
+												<span>0м<sup>2</sup></span>
+												<span>1000м<sup>2</sup></span>
+											</div>
+										</div>
+
+									</div>
+
+									<p class="steps__third-notification">Вы можете ввести значение вручную, либо оно появится здесь автоматически после выбора на ползунке</p>
+
+									<label class="steps__third-meaning">
+										<input class="jstooltipNumber" type="number" placeholder="Введите значение, м2" min="1" max="1000" value="" maxlength="4">
+
+									</label>
+									<span class="steps__warning">Введите число меньше или равное 1000</span>
+
+								</div>
+
+
+								<div class="steps__third-box">
+									<div class="steps__third-img-inner">
+										<div class="steps__third-img"></div>
+
+										<div class="steps__third-img"></div>
+									</div>
+									<div class="steps__button-inner steps__button-inner--three">
+										<button class="steps__button steps__button--prev button" id="steps__button--prev2" type="button">
+											<svg viewBox="0 0 34 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M1 7.5H32.5M32.5 7.5L26 1M32.5 7.5L26 14" stroke="#F0F0F0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+											</svg>
+											Назад
+										</button>
+										<button class="steps__button steps__button--next button" id="steps__button--next3" type="button">Далее
+											<svg viewBox="0 0 34 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M1 7.5H32.5M32.5 7.5L26 1M32.5 7.5L26 14" stroke="#F0F0F0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+											</svg>
+										</button>
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+
+					<div class="steps__stage" id="step-stage4">
+
+						<div class="steps__inner steps__inner--four">
+
+							<div class="steps__four-inner steps__four-inner--left">
+								<h3 class="steps__title steps__title--four">Оставьте свои данные, чтобы менеджер связался с вами и направил вам коммерческое предложение с персональной скидкой</h3>
+								<div class="steps__four-box">
+
+									<div class="steps__four-form">
+										<label class="steps__four-label steps__four-label--name">
+											<input class="steps__four-input name" type="text" maxlength="10" required>
+											<span class="steps__fake-input">Ваше имя*</span>
+										</label>
+										<label class="steps__four-label steps__four-label--phone">
+											<input class="steps__four-input phone-mask" type="text" required>
+											<span class="steps__fake-input">Ваш телефон*</span>
+										</label>
+									</div>
+									<button class="steps__four-button button" type="submit">Получить персональный расчет</button>
+
+								</div>
+
+								<input class="steps__personal-input" id="personal" type="checkbox" checked>
+								<label class="steps__personal-label" for="personal">
+									<span class="steps__fake-checkbox steps__fake-checkbox--personal"></span>
+									<span class="steps__four-personal">Я согласен на обработку персональных данных</span>
+								</label>
+
+							</div>
+
+							<div class="steps__four-inner steps__four-inner--right">
+								<div class="steps__four-img">
+									<img src="img/quiz/quiz-four-1.png" alt="Фото">
+								</div>
+								<div class="steps__button-inner steps__button-inner--four">
+									<button class="steps__button steps__button--four steps__button--prev button" id="steps__button--prev3" type="button">
+										<svg viewBox="0 0 34 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M1 7.5H32.5M32.5 7.5L26 1M32.5 7.5L26 14" stroke="#F0F0F0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+										Назад
+									</button>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+				</form>
+
+			</div>
+		</div>
+	</section>
+
+	<section class="choose">
+		<div class="container">
+			<div class="choose__wrapper">
+				<h2 class="choose__title">Выбирайте готовые покрытия или оформите заказ <br> на изготовление химических составов <br>
+					с индивидуальными свойствами</h2>
+				<a class="choose__button" href="#">Нужен образец</a>
+
+			</div>
+		</div>
+	</section>
+
+	<section class="products">
+		<div class="products__wrapper container">
+			<div class="tabs">
+
+				<ul class="tab-header">
+					<li class="tab-header__item js-tab-trigger tab-header__item--active" data-tab="1">Клей </li>
+					<li class="tab-header__item js-tab-trigger" data-tab="2">Грунт</li>
+					<li class="tab-header__item js-tab-trigger" data-tab="3">Эмаль</li>
+					<li class="tab-header__item js-tab-trigger active" data-tab="4">Клей </li>
+					<li class="tab-header__item js-tab-trigger" data-tab="5">Грунт</li>
+					<li class="tab-header__item js-tab-trigger" data-tab="6">Эмаль</li>
+				</ul>
+
+				<div class="tab-content">
+					<div class="tab-content__box js-tab-content tab-content__box--active" data-tab="1">
+						<div class="tab-content__wrapper">
+							<div class="tab-content__item">
+								<div class="tab-content__name-inner">
+									<h4 class="tab-content__name">Клей <br> грунтовый</h4>
+									<span class="tab-content__price">254 ₽</span>
+								</div>
+
+								<div class="tab-content__describe">
+									<div class="tab-content__describe-text">Подойдет под
+										любые поверхности
+										вашего дома</div>
+									<div class="tab-content__describe-plus">
+										<svg class="tab-content__elipse">
+											<use xlink:href="img/svg/set.svg#products-elipse"></use>
+										</svg>
+									</div>
+								</div>
+
+							</div>
+							<div class="tab-content__item">
+								<div class="tab-content__name-inner">
+									<h4 class="tab-content__name">Клей <br> грунтовый</h4>
+									<span class="tab-content__price">254 ₽</span>
+								</div>
+
+								<div class="tab-content__describe">
+									<div class="tab-content__describe-text">Подойдет под
+										любые поверхности
+										вашего дома</div>
+									<div class="tab-content__describe-plus">
+										<svg class="tab-content__elipse">
+											<use xlink:href="img/svg/set.svg#products-elipse"></use>
+										</svg>
+									</div>
+								</div>
+
+							</div>
+							<div class="tab-content__item">
+								<div class="tab-content__name-inner">
+									<h4 class="tab-content__name">Клей <br> грунтовый</h4>
+									<span class="tab-content__price">254 ₽</span>
+								</div>
+
+								<div class="tab-content__describe">
+									<div class="tab-content__describe-text">Подойдет под
+										любые поверхности
+										вашего дома</div>
+									<div class="tab-content__describe-plus">
+										<svg class="tab-content__elipse">
+											<use xlink:href="img/svg/set.svg#products-elipse"></use>
+										</svg>
+									</div>
+								</div>
+
+							</div>
+							<div class="tab-content__item">
+								<div class="tab-content__name-inner">
+									<h4 class="tab-content__name">Клей <br> грунтовый</h4>
+									<span class="tab-content__price">254 ₽</span>
+								</div>
+
+								<div class="tab-content__describe">
+									<div class="tab-content__describe-text">Подойдет под
+										любые поверхности
+										вашего дома</div>
+									<div class="tab-content__describe-plus">
+										<svg class="tab-content__elipse">
+											<use xlink:href="img/svg/set.svg#products-elipse"></use>
+										</svg>
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+</main>
+
+<div class="popup js-popup">
+		<div class="popup__body">
+			<div class="popup__inner">
+				<h2 class="popup__title">Оставьте свои <span>данные</span></h2>
+				<p class="popup__text"> Наш специалист свяжется с вами в ближайшее время, чтобы рассказать о выгодах сотрудничества с нами и ответить на ваши вопросы</p>
+
+				<form class="popup__form" action="#">
+					<div class="steps__four-box">
+						<div class="steps__four-form">
+							<label class="steps__four-label">
+								<input class="steps__four-input" required type="text">
+								<span class="steps__fake-input name">Ваше имя*</span>
+							</label>
+							<label class="steps__four-label">
+								<input class="steps__four-input phone-mask" required type="text">
+								<span class="steps__fake-input phone-mask">Ваш телефон*</span>
+							</label>
+						</div>
+						<button class="steps__four-button button" type="submit">Получить персональный расчет</button>
+
+					</div>
+
+					<input class="steps__personal-input" id="personal-popup" type="checkbox" checked>
+					<label class="steps__personal-label" for="personal-popup">
+						<span class="steps__fake-checkbox steps__fake-checkbox--personal"></span>
+						<span class="steps__four-personal">Я согласен на обработку персональных данных</span>
+					</label>
+
+				</form>
+			</div>
+			<div class="popup__close jsPopup-close">
+				<svg viewBox="0 0 69 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M25 24L45.5 44.5" stroke="#0C144D" stroke-width="3" stroke-linecap="round"/>
+					<path d="M45.5 24L25 44.5" stroke="#0C144D" stroke-width="3" stroke-linecap="round"/>
+					<circle cx="34.5" cy="34.5" r="33" stroke="#0C144D" stroke-width="3"/>
+				</svg>
+
+			</div>
+		</div>
+	</div>
+
+<div class="popup popup-thanks" style="display: none">
+	<div class="popup__body">
+		<div class="popup__inner">
+			<h2 class="popup__title">Спасибо, что оставили заявку!</h2>
+			<p class="popup__text"> Наш специалист свяжется с вами в ближайшее время!</p>
+			<a class="button" href="#">На главную</a>
+		</div>
+		<div class="popup__close jsPopup-close">
+			<svg viewBox="0 0 69 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M25 24L45.5 44.5" stroke="#0C144D" stroke-width="3" stroke-linecap="round"/>
+				<path d="M45.5 24L25 44.5" stroke="#0C144D" stroke-width="3" stroke-linecap="round"/>
+				<circle cx="34.5" cy="34.5" r="33" stroke="#0C144D" stroke-width="3"/>
+			</svg>
+
+		</div>
+	</div>
+</div>
+
+
+<script src="js/libs/jquery-lib.js"></script>
+<script src="js/libs/nouislider.js"></script>
+<script src="js/libs/wNumb.js"></script>
+<script src="js/libs/swiper-lib.js"></script>
+<script src="js/libs/jquery.maskedinput.min.js"></script>
+<script src="js/swiper.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

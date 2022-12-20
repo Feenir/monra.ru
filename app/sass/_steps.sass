@@ -1,0 +1,552 @@
+.steps
+
+	&__stage
+		padding-top: 48px
+		display: none
+		max-height: 550px
+		@media (max-width: 1080px)
+			padding-top: 42px
+			max-height: unset
+		@media (max-width: 560px)
+			padding-top: 20px
+		&--active
+			display: flex
+			flex-direction: column
+			@media (max-width: 1080px)
+				min-height: 700px
+			@media (max-width: 560px)
+				min-height: 500px
+
+	&__title
+		position: relative
+		font-size: 28px
+		font-weight: 600
+		margin-bottom: 47px
+		z-index: 11
+		@media (max-width: 1080px)
+			font-size: 24px
+			line-height: 30px
+		@media (max-width: 560px)
+			font-size: 16px
+			line-height: 24px
+
+		&--four
+			max-width: 690px
+			line-height: 34px
+			@media (max-width: 1080px)
+				font-size: 22px
+				line-height: 28px
+			@media (max-width: 560px)
+				font-size: 16px
+				line-height: 22px
+		&--has-text
+			margin-bottom: 15px
+
+	&__text
+		position: relative
+		color: #B6BCBE
+		font-size: 18px
+		font-weight: 600
+		margin-bottom: 40px
+		z-index: 11
+		@media (max-width: 1080px)
+			font-size: 14px
+			line-height: 28px
+		@media (max-width: 560px)
+			font-size: 12px
+
+	&__inner
+		position: relative
+		z-index: 11
+		display: flex
+		align-items: stretch
+		flex-wrap: wrap
+		gap: 12px
+		width: 100%
+		@media (max-width: 1080px)
+			position: static
+		&--second
+			flex-wrap: wrap
+			gap: 30px 11px
+			@media (max-width: 560px)
+				justify-content: space-between
+		&--four
+			align-items: stretch
+			flex-wrap: nowrap
+			@media (max-width: 1080px)
+				flex-direction: column
+
+
+
+	&__label
+		position: relative
+		display: flex
+		flex-direction: column
+		width: calc(20% - 10px)
+		max-width: 280px
+		background-color: #D4DADD
+		border-radius: 8px
+		overflow: hidden
+		cursor: pointer
+		outline: 3px solid inherit
+		transition: outline-color .5s linear
+		@media (max-width: 1080px)
+			width: calc(33.33% - 8px)
+			max-width: unset
+		@media (max-width: 768px)
+			width: calc(50% - 6px)
+		@media (max-width: 560px)
+			width: 100%
+
+	&__input
+		position: absolute
+		width: 0
+		height: 0
+		top: 0
+		left: 0
+		visibility: hidden
+		opacity: 0
+
+
+	&__img-inner
+		display: flex
+		max-height: 140px
+		overflow: hidden
+		@media (max-width: 560px)
+			display: none
+		& img
+			height: 100%
+			width: 100%
+			object-fit: cover
+			@media (max-width: 1080px)
+				width: 100%
+				max-height: 100px
+
+	&__title-quiz
+		display: flex
+		padding: 15px 45px 15px 20px
+		font-weight: 600
+		margin: auto 0
+		@media (max-width: 1080px)
+			font-size: 14px
+			line-height: 18px
+			padding: 15px
+		@media (max-width: 560px)
+			font-size: 12px
+
+
+	&__button-inner
+		display: flex
+		align-items: center
+		justify-content: flex-end
+		margin-top: 20px
+		gap: 0 10px
+		@media (max-width: 1080px)
+			position: absolute
+			gap: 0
+			width: 100%
+			bottom: 0
+			right: 0
+
+
+
+	&__button
+		min-height: 95px
+		gap: 0 14px
+		@media (max-width: 1080px)
+			position: relative
+			width: calc(50%)
+			border: none
+			border-radius: unset
+			min-height: 60px
+			padding: 0
+		@media (max-width: 560px)
+			width: 100% !important
+		&:disabled
+			opacity: .2
+		& svg
+			width: 100%
+			max-width: 34px
+			@media (max-width: 1080px)
+				max-width: 16px
+		&--prev
+			background-color: inherit
+			color: rgba(26, 26, 26, 1)
+			@media (max-width: 1080px)
+				background-color: #D4DADD
+			& svg
+				transform: rotate(180deg)
+				@media (max-width: 1080px)
+				& path
+					stroke: rgba(26, 26, 26, 1)
+		&--four
+			@media (max-width: 1080px)
+				width: 100% !important
+
+
+
+	&__second-wrapper
+		display: flex
+		@media (max-width: 1080px)
+			flex-direction: column
+
+
+	&__second-box
+		width: 50%
+		@media (max-width: 1080px)
+			width: 100%
+			margin-bottom: 94px
+		@media (max-width: 560px)
+			margin-bottom: unset
+		&--right
+			position: relative
+			top: -150px
+			display: flex
+			flex-direction: column
+			align-items: flex-end
+			@media (max-width: 1080px)
+				position: static
+				margin: 0
+				top: 0
+
+	&__second-box-img
+		position: relative
+		display: flex
+		max-height: 400px
+		left: 50px
+		&:before
+			position: absolute
+			content: ''
+			width: 300px
+			height: 300px
+			top: 5%
+			left: 30%
+			background: #F0B36A
+			opacity: 0.4
+			filter: blur(100px)
+			z-index: 1
+		@media (max-width: 1080px)
+			display: none
+		& img
+			position: relative
+			z-index: 2
+			object-fit: cover
+
+
+
+	&__second-label
+		position: relative
+		display: flex
+		align-items: center
+		width: calc(40% - 6.5px)
+		cursor: pointer
+
+	&__second-name
+		display: flex
+		align-items: center
+		color: rgba(21, 21, 21, 1)
+		font-size: 22px
+		font-weight: 600
+		@media (max-width: 1080px)
+			font-size: 18px
+		@media (max-width: 560px)
+			font-size: 16px
+
+	&__fake-checkbox
+		position: relative
+		content: ''
+		display: flex
+		flex: 1 1 auto
+		align-items: center
+		justify-content: center
+		max-width: 20px
+		height: 20px
+		background-color: inherit
+		border: 3px solid rgba(21, 21, 21, 1)
+		border-radius: 50%
+		margin-right: 13px
+		&--personal
+			min-width: 20px
+			@media (max-width: 1080px)
+				min-width: 16px
+		@media (max-width: 1080px)
+			display: block
+			max-width: 16px
+			height: 16px
+			border: 2px solid rgba(21, 21, 21, 1)
+		@media (max-width: 560px)
+			min-width: 16px
+		&:before
+			position: absolute
+			content: ''
+			opacity: 0
+			width: 10px
+			height: 10px
+			background-color: #0C144D
+			border-radius: 100%
+			@media (max-width: 1080px)
+				top: 50%
+				left: 50%
+				transform: translate(-50%, -50%)
+				width: 6px
+				height: 6px
+
+
+	&__second-input
+		position: absolute
+		visibility: hidden
+		opacity: 0
+		width: 0
+		height: 0
+		left: 0
+		top: 0
+
+	&__second-wrapper-text
+		font-size: 28px
+		line-height: 28px
+		font-weight: 600
+		margin-top: 68px
+		max-width: 780px
+		@media (max-width: 1080px)
+			font-size: 18px
+			line-height: 22px
+			max-width: 445px
+		@media (max-width: 560px)
+			display: none
+
+	&__third-wrapper
+		display: flex
+		width: 100%
+		@media (max-width: 1080px)
+			flex-direction: column
+
+	&__third-box
+		width: 50%
+		@media (max-width: 1080px)
+			width: 100%
+
+	&__third-notification
+		font-weight: 600
+		font-size: 18px
+		line-height: 22px
+		max-width: 420px
+		margin-top: 50px
+		margin-bottom: 27px
+		@media (max-width: 768px)
+			font-size: 12px
+			line-height: 16px
+
+	&__third-meaning
+		display: flex
+		align-items: center
+		padding-left: 32px
+		max-width: 500px
+		min-height: 85px
+		background-color: #D3DBDE
+		border-radius: 9px
+		@media (max-width: 1080px)
+			min-height: 60px
+			margin-bottom: 168px
+		@media (max-width: 560px)
+			min-height: 50px
+			margin-bottom: 65px
+		& input
+			width: 100%
+			height: 100%
+			&::-webkit-outer-spin-button
+				display: none
+			&::-webkit-inner-spin-button
+				display: none
+		& input::placeholder
+			color: rgba(12, 20, 77, 0.6)
+
+	&__third-img-inner
+		position: relative
+		display: flex
+		align-items: center
+		left: 180px
+		gap: 0 15px
+		@media (max-width: 1080px)
+			display: none
+
+	&__third-img
+		min-width: 365px
+		min-height: 277px
+		box-shadow: 5.17662px 5.17662px 12.9415px rgba(0, 0, 0, 0.35), 20.7065px 20.7065px 38.8246px rgba(0, 0, 0, 0.25)
+		border-radius: 12.9415px
+		border: 3px solid #0C144D
+		background-image: url("../img/quiz/quiz-3.jpg")
+		background-repeat: no-repeat
+		background-size: cover
+		background-position: center
+
+
+	&__four-inner
+		width: 50%
+		@media (max-width: 560px)
+			width: 100%
+		&--right
+			display: flex
+			flex-direction: column
+			justify-content: flex-end
+
+
+
+
+	&__four-form
+		width: 100%
+		display: flex
+		align-items: center
+		gap: 0 10px
+		@media (max-width: 1080px)
+			flex-direction: column
+
+	&__four-label
+		position: relative
+		display: flex
+		align-items: stretch
+		width: 100%
+		max-width: 340px
+		min-height: 85px
+		background: #D3DBDE
+		border-radius: 9px
+		padding-left: 32px
+		overflow: hidden
+		&:not(:last-child)
+			@media (max-width: 1080px)
+				margin-bottom: 12px
+		@media (max-width: 1080px)
+			max-width: unset
+			min-height: 60px
+		@media (max-width: 560px)
+			min-height: 50px
+
+	&__fake-input
+		position: absolute
+		top: 50%
+		transform: translateY(-50%)
+		transition: all .5s
+		color: rgba(12, 20, 77, 0.6)
+		font-size: 18px
+		font-weight: 600
+		@media (max-width: 1080px)
+			font-size: 14px
+
+	&__four-input
+		width: 100%
+		font-size: 18px
+		@media (max-width: 991px)
+			font-size: 14px
+
+	&__four-button
+		max-width: 692px
+		min-height: 85px
+		width: 100%
+		margin-top: 10px
+		margin-bottom: 25px
+		@media (max-width: 1080px)
+			min-height: 60px
+		@media (max-width: 560px)
+			min-height: 50px
+
+	&__four-personal
+		font-weight: 600
+		font-size: 22px
+		line-height: 28px
+		color: #2E2E2E
+		@media (max-width: 1080px)
+			font-size: 14px
+			line-height: 22px
+		@media (max-width: 560px)
+			font-size: 12px
+
+	&__personal-label
+		display: flex
+		align-items: center
+		cursor: pointer
+
+	&__personal-input
+		position: absolute
+		width: 0
+		height: 0
+		top: 0
+		left: 0
+		opacity: 0
+		visibility: hidden
+
+	&__four-img
+		position: absolute
+		display: flex
+		background-repeat: no-repeat
+		background-size: cover
+		background-position: center
+		max-width: 400px
+		margin: 0 auto
+		top: -40px
+		right: 165px
+		z-index: -1
+		@media (max-width: 1080px)
+			display: none
+		& img
+			object-fit: cover
+			height: 100%
+			width: 620px
+
+	&__warning
+		display: none
+		font-size: 8px
+		color: red
+		@media (max-width: 1080px)
+			position: absolute
+			top: 0
+
+
+
+
+#step-stage4
+	@media (max-width: 1080px)
+		background-image: url("../img/quiz/quiz-four-1.png")
+		background-repeat: no-repeat
+		background-size: 70%
+		background-position: 170% 50%
+	@media (max-width: 560px)
+		background-image: none
+
+.steps__input:checked + .steps__label,
+.steps__input:hover + .steps__label
+	outline: 3px solid rgba(12, 20, 77, 1)
+	@media (max-width: 1080px)
+		outline: 2px solid rgba(12, 20, 77, 1)
+	@media (max-width: 560px)
+		color: rgba(12, 20, 77, 1)
+
+.steps__second-input:checked + .steps__second-label > .steps__second-name,
+.steps__second-input:hover + .steps__second-label > .steps__second-name
+	color: rgba(12, 20, 77, 1)
+
+.steps__second-input:checked + .steps__second-label > .steps__fake-checkbox,
+.steps__second-input:hover + .steps__second-label > .steps__fake-checkbox,
+.steps__personal-input:checked + .steps__personal-label > .steps__fake-checkbox
+	border: 3px solid rgba(12, 20, 77, 1)
+	@media (max-width: 1080px)
+		border: 2px solid rgba(12, 20, 77, 1)
+
+.steps__second-input:checked + .steps__second-label > .steps__fake-checkbox:before,
+.steps__personal-input:checked + .steps__personal-label > .steps__fake-checkbox:before
+	opacity: 1
+
+.steps__four-input:focus ~ .steps__fake-input,
+.steps__four-input:not(:focus):valid ~ .steps__fake-input
+	top: 19px
+	font-size: 12px
+	@media (max-width: 560px)
+		top: 10px
+
+
+
+
+
+
+
+
+

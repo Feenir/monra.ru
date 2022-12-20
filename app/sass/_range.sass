@@ -1,0 +1,79 @@
+.range
+	&__label-hidden
+		width: 0
+		height: 0
+		top: 0
+		left: 0
+		visibility: hidden
+		opacity: 0
+
+	&__total
+		position: relative
+		display: flex
+		justify-content: space-between
+		align-items: center
+		font-size: 22px
+		line-height: 28px
+		font-weight: 600
+		width: calc(100% + 40px)
+		margin-top: 10px
+		left: -15px
+		color: rgba(21, 21, 21, 1)
+		@media (max-width: 1080px)
+			font-size: 18px
+			left: 0
+			width: 100%
+		@media (max-width: 560px)
+			font-size: 12px
+			line-height: 1
+		& sup
+			font-size: 12px
+			font-weight: 600
+
+.noUi-horizontal
+	height: 4px
+
+.noUi-connects
+	background-color: #D3DBDE
+
+.noUi-connect
+	background: #0C144D
+
+
+.noUi-target
+	border: none
+	box-shadow: none
+
+.noUi-handle
+	border-radius: 50%
+	border: none
+	box-shadow: none
+	width: 8px!important
+	height: 8px!important
+	background-color: #0C144D
+	top: -2px!important
+	right: -2px!important
+	cursor: pointer
+	&:before
+		display: none
+	&:after
+		display: none
+
+	.noUi-tooltip
+		border: none
+		background: none
+		bottom: -50px
+		left: 10px!important
+		font-size: 22px
+		font-weight: 600
+		color: rgba(12, 20, 77, 1)
+		transition: bottom .1s ease-in-out
+		@media (max-width: 1080px)
+			font-size: 18px
+			bottom: -40px
+		@media (max-width: 560px)
+			font-size: 12px
+			bottom: -34px
+		&:after
+			content: 'м\00B2'
+

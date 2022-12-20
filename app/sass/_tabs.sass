@@ -1,0 +1,83 @@
+$colorBackMain: #E2E3E8
+$colorBackActive: #0C144D
+$textColorTabs:  #0C144D
+
+.tab-header
+	display: flex
+	align-items: center
+	margin-bottom: 72px
+	&__item
+		display: flex
+		align-items: center
+		justify-content: center
+		font-weight: 600
+		font-size: 24px
+		line-height: 28px
+		min-width: 250px
+		min-height: 72px
+		background: $colorBackMain
+		color: $textColorTabs
+		border-radius: 9px
+		cursor: pointer
+		transition: color .5s, background .5s
+		&:not(:last-child)
+			margin-right: 14px
+		&--active
+			background: $colorBackActive
+			color: white
+
+.tab-content
+	&__wrapper
+		display: flex
+		align-items: stretch
+	&__item
+		display: flex
+		flex-direction: column
+		justify-content: flex-end
+		min-height: 532px
+		background-color: #FFFFFF
+		border-radius: 9px
+		padding: 0 25px 28px 25px
+		width: calc(25% - 11px)
+		background-image: url("../img/product/price-1.png")
+		background-position: top center
+		background-repeat: no-repeat
+		background-size: contain
+		&:not(:last-child)
+			margin-right: 42px
+	&__name-inner
+		display: flex
+		justify-content: space-between
+		align-items: center
+		margin-bottom: 14px
+
+	&__name, &__price
+		color: $textColorTabs
+
+	&__name
+		font-size: 22px
+		line-height: 28px
+		font-weight: 600
+
+	&__price
+		font-size: 32px
+		line-height: 28px
+		font-weight: 700
+
+	&__describe
+		display: flex
+		align-items: center
+		justify-content: space-between
+
+	&__describe-text
+		font-weight: 500
+		font-size: 16px
+		line-height: 22px
+		color: rgba(0, 0, 0, 0.6)
+		max-width: 174px
+
+	&__elipse
+		max-width: 60px
+		max-height: 60px
+
+
