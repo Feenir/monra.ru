@@ -1278,7 +1278,8 @@ li {
       min-width: calc(100% - 12px); } }
 .hero__swiper {
   padding-bottom: 40px;
-  max-width: 790px; }
+  max-width: 790px;
+  margin-left: 0; }
   @media (max-width: 991px) {
     .hero__swiper {
       padding-bottom: 0; } }
@@ -1334,6 +1335,9 @@ li {
 .quiz {
   margin-bottom: 150px;
   overflow: hidden; }
+  @media (max-width: 1440px) {
+    .quiz {
+      margin-bottom: 42px; } }
   .quiz__wrapper {
     background-color: #E3EAED;
     border-radius: 26px;
@@ -1430,6 +1434,9 @@ li {
   background-repeat: no-repeat;
   min-height: 645px;
   margin-bottom: 120px; }
+  @media (max-width: 1440px) {
+    .choose__wrapper {
+      margin-bottom: 64px; } }
   @media (max-width: 1024px) {
     .choose__wrapper {
       justify-content: flex-start;
@@ -1484,9 +1491,13 @@ li {
 
 .products__wrapper {
   margin-bottom: 80px; }
+  @media (max-width: 1440px) {
+    .products__wrapper {
+      margin-bottom: 46px; } }
   @media (max-width: 560px) {
     .products__wrapper {
-      padding: 0 0 0 10px; } }
+      padding: 0 0 0 10px;
+      margin-bottom: 64px; } }
 
 .tab-header {
   overflow-x: auto;
@@ -1619,26 +1630,48 @@ li {
   position: relative;
   display: flex;
   margin: 0 max(12px, calc((100% - 1572px) / 2)) 154px max(12px, calc((100% - 1572px) / 2)); }
+  @media (max-width: 1440px) {
+    .catalog__wrapper {
+      margin-bottom: 45px; } }
 .catalog__inner {
   display: flex;
   width: 100%;
   padding: 30px 350px 60px 65px;
   background-color: #0C144D;
-  border-radius: 26px; }
+  border-radius: 26px;
+  background-image: url("../img/catalog/wood.png");
+  background-size: contain;
+  background-position: bottom right;
+  background-repeat: no-repeat; }
+  @media (max-width: 1440px) {
+    .catalog__inner {
+      padding: 30px 260px 25px 30px; } }
+  @media (max-width: 768px) {
+    .catalog__inner {
+      padding: 20px 40px 250px 15px;
+      background-position: bottom center;
+      background-image: url("../img/catalog/wood-table.png");
+      min-height: 470px;
+      background-size: cover; } }
+  @media (max-width: 560px) {
+    .catalog__inner {
+      background-image: url("../img/catalog/wood-moob.png");
+      background-size: 100% 100%; } }
 .catalog__title {
   font-weight: 600;
   font-size: 48px;
   line-height: 61px;
   color: white; }
+  @media (max-width: 1440px) {
+    .catalog__title {
+      font-size: 32px;
+      line-height: 40px; } }
+  @media (max-width: 991px) {
+    .catalog__title {
+      font-size: 24px;
+      line-height: 30px; } }
 .catalog__title-decorate {
   border-bottom: 3px dashed rgba(255, 255, 255, 0.4); }
-.catalog__img {
-  position: absolute;
-  right: -70px;
-  bottom: 0;
-  pointer-events: none; }
-  .catalog__img img {
-    display: block; }
 
 .profitability__title {
   font-weight: 600;
@@ -1646,6 +1679,12 @@ li {
   line-height: 61px;
   color: #0C144D;
   max-width: 930px; }
+  @media (max-width: 1440px) {
+    .profitability__title {
+      font-size: 32px;
+      line-height: 40px;
+      max-width: unset;
+      margin-bottom: 45px; } }
 .profitability__text {
   font-weight: 500;
   font-size: 22px;

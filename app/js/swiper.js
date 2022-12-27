@@ -13,7 +13,7 @@ const heroSlider = new Swiper(".heroSlider", {
   },
 
   breakpoints: {
-    992: {
+    1024: {
       slidesPerView: 1.25,
       spaceBetween: 20,
     },
