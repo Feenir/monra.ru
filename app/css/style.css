@@ -1698,10 +1698,20 @@ li {
   display: flex;
   align-items: center;
   margin-bottom: 150px; }
+  @media (max-width: 1440px) {
+    .profitability__wrapper {
+      flex-direction: column;
+      align-items: flex-start; } }
 .profitability__box {
   width: 50%; }
+  @media (max-width: 1440px) {
+    .profitability__box {
+      width: 100%; } }
   .profitability__box--left {
     align-self: flex-end; }
+    @media (max-width: 1440px) {
+      .profitability__box--left {
+        display: none; } }
 .profitability__box-inner {
   display: flex;
   flex-direction: column; }
@@ -1711,6 +1721,11 @@ li {
   align-items: stretch;
   justify-content: space-evenly;
   width: 100%; }
+  @media (max-width: 1440px) {
+    .profitability__box-back {
+      gap: 0 95px;
+      margin-bottom: 75px;
+      justify-content: space-between; } }
   .profitability__box-back:before {
     position: absolute;
     display: block;
@@ -1722,10 +1737,17 @@ li {
     left: 0;
     width: 100%;
     z-index: -1; }
+    @media (max-width: 1440px) {
+      .profitability__box-back:before {
+        display: none; } }
 .profitability__barrel {
   display: flex;
   flex-direction: column;
-  justify-content: space-between; }
+  justify-content: space-between;
+  align-items: center; }
+  @media (max-width: 1440px) {
+    .profitability__barrel {
+      flex-direction: column-reverse; } }
 .profitability__barrel-text {
   text-align: center;
   font-weight: 500;
@@ -1734,13 +1756,38 @@ li {
   color: rgba(0, 0, 0, 0.6);
   max-width: 290px;
   margin: 0 auto; }
+  .profitability__barrel-text--table {
+    display: none;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #2E2E2E; }
+    @media (max-width: 1440px) {
+      .profitability__barrel-text--table {
+        display: block;
+        text-align: left; } }
 .profitability__img img {
   max-width: 455px;
   min-height: 460px; }
+  @media (max-width: 1440px) {
+    .profitability__img img {
+      min-height: 440px;
+      max-width: 390px;
+      width: 100%;
+      object-fit: cover; } }
 .profitability__button {
   min-height: 85px;
   font-weight: 600;
   font-size: 18px; }
+  @media (max-width: 1440px) {
+    .profitability__button {
+      display: none; } }
+  .profitability__button--table {
+    display: none; }
+    @media (max-width: 1440px) {
+      .profitability__button--table {
+        display: flex;
+        width: 100%; } }
 
 .consultation__title {
   font-weight: 600;
