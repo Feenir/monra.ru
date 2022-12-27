@@ -24,9 +24,6 @@
 			margin-bottom: 48px
 			padding-top: 123px
 
-
-
-
 	&__title
 		position: relative
 		max-width: 840px
@@ -38,7 +35,7 @@
 			padding-right: 10px
 			word-break: break-word
 		@media (max-width: 332px)
-			font-size: 32px
+			font-size: $font32
 		&:after
 			content: ''
 			display: block
@@ -52,24 +49,25 @@
 			z-index: -1
 
 	&__text
-		font-weight: 500
-		font-size: 22px
-		line-height: 28px
+		font-weight: $fontWeightNormal
+		font-size: $font22
+		line-height: $lineHeightText
 		color: #000000
 		margin-bottom: 73px
 		max-width: 560px
 		@media (max-width: 991px)
-			font-size: 16px
-			line-height: 22px
+			font-size: $font16
+			line-height: $lineHeight22
 			margin-bottom: 26px
 		@media (max-width: 560px)
-			font-size: 14px
+			font-size: $font14
 			padding-right: 10px
 
 	&__button
 		min-height: 85px
 		max-width: 385px
 		transition: opacity .5s
+		white-space: nowrap
 		&:hover
 			opacity: .7
 		&--desk
@@ -126,7 +124,7 @@
 			color: rgba(12, 20, 77, 1)
 			padding: 26px 0 0 26px
 		@media (max-width: 560px)
-			font-size: 14px
+			font-size: $font14
 			line-height: 20px
 			padding: 14px 0 0 14px
 

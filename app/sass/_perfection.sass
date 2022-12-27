@@ -1,0 +1,81 @@
+.perfection
+	&__wrapper
+		display: flex
+		align-items: stretch
+		gap: 16px
+		margin-bottom: 124px
+		& > *
+			display: flex
+			flex-direction: column
+			width: 50%
+			padding: 80px 42px 50px 42px
+			background-color: #E2E3E8
+			border-radius: 26px
+
+	&__item
+		&:nth-child(2)
+			position: relative
+			overflow: hidden
+			z-index: 1
+			&:before
+				position: absolute
+				display: block
+				content: ""
+				top: 50%
+				right: -40%
+				width: 615px
+				height: 415px
+				background: #F0B36A
+				opacity: 0.4
+				filter: blur(200px)
+				transform: translateY(-50%)
+				z-index: -1
+
+	&__title
+		font-weight: 600
+		font-size: 48px
+		line-height: 61px
+		color: #000000
+		margin-bottom: 60px
+
+	&__text
+		font-size: 18px
+		color: #000000
+		opacity: .7
+		&:not(:last-child)
+			margin-bottom: 15px
+
+	&__item-inner
+		padding-bottom: 40px
+		border-bottom: 3px solid #0C144D
+		margin-bottom: 40px
+
+	&__text-down
+		font-weight: 600
+		font-size: 32px
+		line-height: 40px
+		color: #0C144D
+
+	&__box
+		display: flex
+		flex-direction: column
+		align-items: flex-start
+		&:not(:last-child)
+			margin-bottom: 66px
+
+	&__number
+		font-weight: 600
+		font-size: 100px
+		line-height: 100px
+		color: #0C144D
+
+	&__box-text
+		font-weight: 500
+		font-size: 22px
+		line-height: 28px
+		color: #2E2E2E
+		opacity: 0.7
+
+
+
+

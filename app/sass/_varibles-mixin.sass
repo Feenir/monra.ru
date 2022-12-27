@@ -1,0 +1,51 @@
+$font12: 12px
+$font14: 14px
+$font16: 16px
+$font18: 18px
+$font22: 22px
+$font24: 24px
+$font32: 32px
+$font48: 48px
+$fontWeightNormal: 500
+$fontWeightBold: 600
+$lineHeight22: 22px
+$lineHeight30: 30px
+$lineHeight40: 40px
+$lineHeightButton: 22px
+$lineHeightText: 28px
+$lineHeightTitle: 61px
+
+@mixin buttonFonts
+	font-weight: $fontWeightBold
+	font-size: $font18
+	line-height: $lineHeightButton
+
+
+@mixin titleFonts
+	font-weight: $fontWeightBold
+	font-size: $font48
+	line-height: $lineHeightTitle
+	@media (max-width: 1024px)
+		font-size: $font32
+		line-height: $lineHeight40
+	@media (max-width: 560px)
+		font-size: $font24
+		line-height: $lineHeight30
+
+@mixin fontText
+	font-size: $font18
+	@media (max-width: 991px)
+		font-size: $font14
+
+@mixin buttonParameters
+	color: white
+	max-width: 385px
+	min-height: 85px
+	border: 2px solid white
+	border-radius: 9px
+	@media (max-width: 1024px)
+		min-height: 60px
+	@media (max-width: 560px)
+		max-width: unset
+		width: 100%
+

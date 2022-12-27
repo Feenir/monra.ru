@@ -1,0 +1,117 @@
+.map
+	position: relative
+	z-index: 10
+	padding-bottom: 80px
+	border-bottom-left-radius: 80px
+	border-bottom-right-radius: 80px
+	background-color: #F5F5F5
+
+	&__title-heading
+		font-weight: 600
+		font-size: 48px
+		line-height: 61px
+		color: #000000
+		margin-bottom: 53px
+		max-width: 866px
+
+	&__wrapper
+		background-color: #E2E3E8
+		border-radius: 26px
+		padding: 58px 40px 32px 40px
+
+	&__block-inner
+		display: flex
+		align-items: stretch
+
+	&__title
+		font-weight: 600
+		font-size: 32px
+		line-height: 40px
+		color: #000000
+
+	&__block
+		width: 50%
+
+	&__inner
+		z-index: 2
+		margin-right: 17px
+
+	&__yandex
+		border-radius: 9px
+		overflow: hidden
+
+	&__card
+		display: flex
+		justify-content: space-between
+		padding: 40px
+		background: #D2D3DD
+		border-radius: 20px
+		cursor: pointer
+		transition: background .5s
+		&--active
+			background: #0C144D
+			& .map__title
+				color: white
+			& .map__hidden
+				display: flex
+		&:not(:last-child)
+			margin-bottom: 15px
+
+	&__hidden
+		display: none
+		flex-direction: column
+
+	&__left-hidden
+		& p
+			font-weight: 600
+			font-size: 18px
+			line-height: 22px
+			color: rgba(255, 255, 255, 0.6)
+			margin-bottom: 32px
+			max-width: 260px
+			&:first-child
+				margin-top: 32px
+		& a
+			font-weight: 600
+			font-size: 22px
+			line-height: 28px
+			color: #FFFFFF
+		& a[href^="https://yandex.ru/maps/"]
+			display: flex
+			align-items: center
+			justify-content: flex-start
+			&:after
+				content: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10.0002 1.25C5.85793 1.25 2.50018 4.60775 2.50018 8.75C2.50018 10.8204 3.33906 12.695 4.69581 14.0521C6.05293 15.41 9.25018 17.375 9.43768 19.4375C9.4658 19.7467 9.68968 20 10.0002 20C10.3107 20 10.5346 19.7467 10.5627 19.4375C10.7502 17.375 13.9474 15.41 15.3046 14.0521C16.6613 12.695 17.5002 10.8204 17.5002 8.75C17.5002 4.60775 14.1424 1.25 10.0002 1.25Z' fill='%23FF4433'/%3E%3Cpath d='M10.0002 11.375C11.45 11.375 12.6252 10.1997 12.6252 8.75C12.6252 7.30025 11.45 6.125 10.0002 6.125C8.55048 6.125 7.37521 7.30025 7.37521 8.75C7.37521 10.1997 8.55048 11.375 10.0002 11.375Z' fill='white'/%3E%3C/svg%3E%0A")
+				margin-left: 10px
+				transform: translateY(3px)
+
+
+	&__right-hidden
+		align-self: flex-end
+		& li
+			&:not(:last-child)
+				margin-bottom: 26px
+		& a
+			font-weight: 600
+			font-size: 22px
+			line-height: 28px
+			color: #FFFFFF
+
+
+
+#map
+	width: 100%
+	height: 100%
+	padding: 0
+	margin: 0
+	min-height: 580px
+
+.ymaps-2-1-79-ground-pane
+	filter: grayscale(1)
+	-ms-filter: grayscale(1)
+	-webkit-filter: grayscale(1)
+	-moz-filter: grayscale(1)
+	-o-filter: grayscale(1)
+
+
+

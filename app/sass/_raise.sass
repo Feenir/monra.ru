@@ -1,0 +1,83 @@
+.raise
+	&__wrapper
+		position: relative
+		display: flex
+		margin-left: max(12px, calc((100% - 1572px)/2))
+		width: 100%
+		margin-bottom: 130px
+
+	&__title
+		font-weight: 600
+		font-size: 48px
+		line-height: 61px
+		margin-bottom: 120px
+
+	&__text
+		font-weight: 500
+		font-size: 22px
+		line-height: 28px
+		max-width: 590px
+
+	&__title-color
+		color: #0C144D
+
+	&__text-block
+		min-width: 800px
+		width: 50%
+		max-width: 800px
+		margin-right: 120px
+
+	&__swiper-wrapper
+		gap: 0 30px
+		padding-bottom: 180px
+		padding-left: 20px
+
+	&__slider
+		overflow: hidden
+
+	&__slide
+		max-width: 710px
+		max-height: 460px
+		box-shadow: 5.17662px 5.17662px 12.9415px rgba(0, 0, 0, 0.35), 20.7065px 20.7065px 38.8246px rgba(0, 0, 0, 0.25)
+		border-radius: 12px
+		border: 10px solid #0C144D
+		overflow: hidden
+		& img
+			width: auto
+
+	&__scrollbar
+		position: absolute
+		height: 3px
+		bottom: 0
+		width: 100%
+		max-width: 1572px
+		background-color: #0C144D
+		& .swiper-scrollbar-drag
+			background-color: #0C144D
+
+	&__button-inner
+		position: absolute
+		left: 500px
+		bottom: 140px
+		z-index: 10
+
+	&__button-svg
+		max-width: 83px
+		max-height: 83px
+		cursor: pointer
+
+	&__prev
+		transform: rotate(-180deg)
+
+
+
+.swiper-button-disabled.raise__button-svg
+	transition: opacity 0.5s
+	opacity: 0.4
+	cursor: auto
+
+
+
+
+
+

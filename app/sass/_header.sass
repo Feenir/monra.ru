@@ -27,10 +27,10 @@
 		@include fontText
 		font-weight: 500
 		@media (max-width: 1180px)
-			font-size: 14px
+			font-size: $font14
 			max-width: 225px
 		@media (max-width: 680px)
-			font-size: 12px
+			font-size: $font12
 			margin-right: 10px
 		@media (max-width: 560px)
 			display: none
@@ -53,15 +53,15 @@
 
 
 	&__contacts
-		font-size: 18px
-		font-weight: 600
+		font-size: $font18
+		font-weight: $fontWeightBold
 		transition: opacity .5s
 		&:hover
 			opacity: .6
 		&:not(:last-child)
 			margin-right: 60px
 		@media (max-width: 1180px)
-			font-size: 14px
+			font-size: $font14
 
 	&__menu-wrapper
 		display: flex
@@ -125,6 +125,6 @@
 		@include fontText
 		font-weight: 600
 		@media (max-width: 1180px)
-			font-size: 14px
+			font-size: $font14
 		@media (max-width: 991px)
 			display: none

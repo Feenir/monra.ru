@@ -1,0 +1,108 @@
+.sale
+	margin-bottom: 45px
+
+	&__title
+		font-weight: 600
+		font-size: 48px
+		line-height: 61px
+		color: #FFFFFF
+		max-width: 672px
+		margin-bottom: 70px
+
+	&__inner
+		background-color: #0C144D
+		border-radius: 26px
+		padding: 72px 0 90px 50px
+		background-image: url("../img/sale-10.png")
+		background-size: contain
+		background-position: right center
+		background-repeat: no-repeat
+
+	&__wrapper
+		display: flex
+		flex-direction: column
+
+	&__input
+		color: white
+
+	&__input-checkbox
+		opacity: 0
+		visibility: hidden
+		width: 0
+		height: 0
+
+	&__label
+		position: relative
+		display: flex
+		align-items: center
+		background: #11152F
+		border-radius: 9px
+		max-width: 555px
+		min-height: 85px
+		margin-bottom: 20px
+		padding-left: 32px
+
+
+	&__fake-input
+		position: absolute
+		color: rgba(255, 255, 255, 0.6)
+		font-size: 18px
+		left: 32px
+		top: 50%
+		transform: translateY(-50%)
+		transition: all .5s
+		cursor: pointer
+
+	&__button
+		max-width: 555px
+		background-color: white
+		color: #0C144D
+		min-height: 85px
+		margin-bottom: 30px
+
+	&__checkbox
+		display: flex
+		align-items: center
+		cursor: pointer
+
+	&__fake-checkbox
+		font-weight: 600
+		font-size: 22px
+		line-height: 28px
+		color: #BABABA
+
+	&__fake-checkbox-round
+		display: flex
+		align-items: center
+		justify-content: center
+		width: 22px
+		height: 22px
+		border: 2px solid white
+		background-color: inherit
+		border-radius: 50%
+		margin-right: 13px
+		&:before
+			content: ''
+			display: block
+			width: 10px
+			height: 10px
+			background-color: white
+			border-radius: 50%
+			opacity: 0
+			transition: opacity .5s
+
+	&__fake-color
+		color: white
+
+
+.sale__input:focus ~ .sale__fake-input,
+.sale__input:not(:focus):valid ~ .sale__fake-input
+	top: 20px
+	font-size: 12px
+	@media (max-width: 560px)
+		top: 10px
+
+.sale__input-checkbox:checked + .sale__checkbox > .sale__fake-checkbox-round:before
+	opacity: 1
+
+
