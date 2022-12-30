@@ -7,8 +7,7 @@ node_modules/
  #Исключаем из GIT файлы на продакшн
 dist/
 
- #Исключаем из GIT package-lock.json
- package-lock.json
+
 
 
 
