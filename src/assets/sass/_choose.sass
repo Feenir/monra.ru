@@ -1,0 +1,45 @@
+.choose
+	&__wrapper
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		padding: 76px 76px 100px 76px
+		background-color: #0C144D
+		border-radius: 26px
+		background-image: url("../images/choose/kraskigroup.png")
+		background-repeat: no-repeat
+		min-height: 645px
+		margin-bottom: 120px
+		@media (max-width: 1440px)
+			margin-bottom: 64px
+		@media (max-width: 1024px)
+			justify-content: flex-start
+			background-position: right bottom
+			padding: 50px 85px 435px 40px
+			background-image: url("../images/choose/kraskigroup-table.png")
+		@media (max-width: 560px)
+			padding: 20px 20px 250px 20px
+			background-image: url("../images/choose/kraskigroup-mobile.png")
+			background-size: contain
+
+
+	&__title
+		@include titleFonts
+		color: white
+		margin-right: 2%
+		@media (max-width: 1024px)
+			margin-bottom: 45px
+			margin-right: 0
+		@media (max-width: 560px)
+			margin-bottom: 25px
+
+	&__button
+		display: flex
+		align-items: center
+		justify-content: center
+		@include buttonParameters
+		@include buttonFonts
+
+
+
+

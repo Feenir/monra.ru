@@ -1,0 +1,95 @@
+.perfection
+
+	&__title
+		font-weight: 600
+		font-size: 48px
+		line-height: 61px
+		color: #000000
+		max-width: 700px
+		margin-bottom: 80px
+
+
+	&__wrapper
+		display: flex
+		flex-wrap: wrap
+		gap: 16px
+		margin-bottom: 124px
+
+	&__item
+		display: flex
+		flex-direction: column
+		padding: 72px 40px 64px 72px
+		background-color: #E2E3E8
+		border-radius: 26px
+		width: calc(50% - 8px)
+		&--top
+			width: 100%
+			padding: 80px 42px 50px 42px
+		&--second
+			position: relative
+			background-image: url("../images/perfection/perfection.jpg")
+			background-size: cover
+			background-position: center
+			background-repeat: no-repeat
+			overflow: hidden
+			&:before
+				content: ''
+				position: absolute
+				top: 0
+				left: 0
+				bottom: 0
+				right: 0
+				background-color: rgba(7, 9, 26, .6)
+				z-index: 1
+			& .perfection__item-text
+				color: white!important
+				position: relative
+				z-index: 2
+		&--third
+			& .perfection__item-text
+				max-width: 590px
+
+
+	&__box-inner
+		display: flex
+		align-items: flex-start
+		justify-content: space-between
+		& > *
+			width: 25%
+
+	&__box
+		display: flex
+		flex-direction: column
+		align-items: flex-start
+		&:nth-child(1)
+			margin-right: 205px
+		&:nth-child(2)
+			margin-right: 90px
+		&:nth-child(3)
+			margin-right: 76px
+
+	&__item-text
+		font-weight: 600
+		font-size: 32px
+		line-height: 40px
+		color: #0C144D
+
+	&__number
+		font-weight: 600
+		font-size: 120px
+		line-height: 100px
+		color: #0C144D
+		margin-bottom: 17px
+
+	&__box-text
+		font-weight: 500
+		font-size: 22px
+		line-height: 28px
+		color: #2E2E2E
+		opacity: 0.7
+		&--long
+			min-width: 320px
+
+
+
+

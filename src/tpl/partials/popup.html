@@ -1,0 +1,58 @@
+<div class="popup js-popup">
+	<div class="popup__body">
+		<div class="popup__inner">
+			<h2 class="popup__title">Оставьте свои <span>данные</span></h2>
+			<p class="popup__text"> Наш специалист свяжется с вами в ближайшее время, чтобы рассказать о выгодах сотрудничества с нами и ответить на ваши вопросы</p>
+
+			<form class="popup__form" action="#">
+				<div class="steps__four-box">
+					<div class="steps__four-form">
+						<label class="steps__four-label">
+							<input class="steps__four-input" required type="text">
+							<span class="steps__fake-input name">Ваше имя*</span>
+						</label>
+						<label class="steps__four-label">
+							<input class="steps__four-input phone-mask" required type="text">
+							<span class="steps__fake-input phone-mask">Ваш телефон*</span>
+						</label>
+					</div>
+					<button class="steps__four-button button js-thanks" type="submit">Получить персональный расчет</button>
+
+				</div>
+
+				<input class="steps__personal-input" id="personal-popup" type="checkbox" checked>
+				<label class="steps__personal-label" for="personal-popup">
+					<span class="steps__fake-checkbox steps__fake-checkbox--personal"></span>
+					<span class="steps__four-personal">Я согласен на обработку персональных данных</span>
+				</label>
+
+			</form>
+		</div>
+		<div class="popup__close jsPopup-close">
+			<svg viewBox="0 0 69 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M25 24L45.5 44.5" stroke="#0C144D" stroke-width="3" stroke-linecap="round"/>
+				<path d="M45.5 24L25 44.5" stroke="#0C144D" stroke-width="3" stroke-linecap="round"/>
+				<circle cx="34.5" cy="34.5" r="33" stroke="#0C144D" stroke-width="3"/>
+			</svg>
+
+		</div>
+	</div>
+</div>
+
+<div class="popup popup-thanks" style="display: none">
+	<div class="popup__body">
+		<div class="popup__inner">
+			<h2 class="popup__title">Спасибо, что оставили заявку!</h2>
+			<p class="popup__text"> Наш специалист свяжется с вами в ближайшее время!</p>
+			<a class="button" href="#">На главную</a>
+		</div>
+		<div class="popup__close jsPopup-close">
+			<svg viewBox="0 0 69 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M25 24L45.5 44.5" stroke="#0C144D" stroke-width="3" stroke-linecap="round"/>
+				<path d="M45.5 24L25 44.5" stroke="#0C144D" stroke-width="3" stroke-linecap="round"/>
+				<circle cx="34.5" cy="34.5" r="33" stroke="#0C144D" stroke-width="3"/>
+			</svg>
+
+		</div>
+	</div>
+</div>

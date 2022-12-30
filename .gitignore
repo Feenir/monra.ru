@@ -1,5 +1,14 @@
  #Исключаем из GIT папку среды разработки
 .idea/
 
-#Исключить sass
-app/sass/
+ #Исключаем из GIT файлы GUP
+node_modules/
+
+ #Исключаем из GIT файлы на продакшн
+dist/
+
+ #Исключаем из GIT package-lock.json
+ package-lock.json
+
+
+

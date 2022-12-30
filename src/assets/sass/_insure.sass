@@ -1,0 +1,96 @@
+.insure
+
+	&__title
+		font-weight: 600
+		font-size: 48px
+		line-height: 61px
+		margin-bottom: 67px
+		color: #000000
+		max-width: 800px
+
+	&__wrapper
+		display: flex
+		align-items: stretch
+		gap: 19px
+		margin-bottom: 70px
+		& > *
+			display: flex
+			flex-direction: column
+			justify-content: space-between
+			width: 33.33%
+			background: #E2E3E8
+			border-radius: 26px
+			padding: 55px 30px
+
+	&__item
+		position: relative
+		transition: all .1s
+		outline: 4px solid #E2E3E8
+		overflow: hidden
+		background-repeat: no-repeat
+		background-size: cover
+		background-position: center
+		&--first
+			&:hover
+				background-image: url("../images/insure/insure1.jpg")
+		&--second
+			&:hover
+				background-image: url("../images/insure/insure2.jpg")
+		&--third
+			&:hover
+				background-image: url("../images/insure/insure3.jpg")
+		&:before
+			content: ''
+			position: absolute
+			top: 0
+			left: 0
+			right: 0
+			bottom: 0
+			background: linear-gradient(0deg, rgba(12, 20, 77, 0.33), rgba(12, 20, 77, 0.33))
+			opacity: 0
+		&:hover
+			outline: 4px solid rgba(12, 20, 77, 1)
+			&:before
+				opacity: 1
+				pointer-events: none
+			& .insure__item-title, .insure__partner
+				position: relative
+				z-index: 2
+				color: white
+			& .insure__arrow path
+				stroke: white
+				position: relative
+				z-index: 2
+			& .insure__text
+				color: rgba(255, 255, 255, 0.7)
+				position: relative
+				z-index: 2
+
+
+	&__item-title
+		font-weight: 600
+		font-size: 32px
+		line-height: 40px
+		color: #0C144D
+		margin-bottom: 87px
+		max-width: 380px
+
+	&__info-inner
+		display: flex
+		flex-direction: column
+		justify-content: flex-end
+		height: 100%
+		gap: 25px
+
+	&__text
+		color: #2E2E2E
+		font-weight: 500
+		font-size: 22px
+		line-height: 28px
+
+	&__partner
+		font-weight: 600
+		font-size: 22px
+		line-height: 28px
+		color: #0C144D
+
