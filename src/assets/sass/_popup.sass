@@ -25,9 +25,11 @@
 		background-color: #D3DBDE
 		border-radius: 26px
 		padding: 75px
-		background-image: url("../images/quiz/quiz-four-1.png")
-		background-position: 760px 320px
-		background-size: contain
+		background-image: url("../images/popup/popup-back.png")
+		@supports (background-image: url('../images/popup/popup-back.webp'))
+			background-image: url('../images/popup/popup-back.webp')
+		background-position: 710px 285px
+		background-size: auto
 		background-repeat: no-repeat
 		@media (max-width: 1640px)
 			margin: 0 15px

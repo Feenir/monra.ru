@@ -7,15 +7,21 @@
 		color: #000000
 		margin-bottom: 40px
 		max-width: 800px
+		@media (max-width: 991px)
+			font-size: 32px
+			line-height: 40px
 
 	&__wrapper
 		display: flex
 		align-items: stretch
 		margin-bottom: 12px
+		@media (max-width: 768px)
+			flex-direction: column
 
 	&__box
 		display: flex
 		justify-content: flex-start
+		align-items: flex-start
 		padding: 246px 20px 36px 30px
 		background-color: #E2E3E8
 		border-radius: 26px
@@ -23,15 +29,28 @@
 		background-repeat: no-repeat
 		background-size: contain
 		background-position: 40px 40px
+		@media (max-width: 991px)
+			background-image: none!important
+			padding: 60px 23px 25px 42px
+			min-height: 228px
+			align-items: flex-end
+		@media (max-width: 768px)
+			padding: 32px 22px
+			width: 100%
+			align-items: center
+			min-height: auto
 		&:nth-child(1)
 			background-size: 75px 68px
 		&:nth-child(2)
 			background-size: 85px 54px
 		&:nth-child(3)
 			background-size: 58px 70px
-
 		&:not(:last-child)
 			margin-right: 12px
+			@media (max-width: 768px)
+				margin-right: 0
+				margin-bottom: 8px
+
 
 
 	&__box-title
@@ -40,6 +59,14 @@
 		font-size: 22px
 		line-height: 28px
 		color: #0C144D
+		& br
+			@media (max-width: 768px)
+				display: none
+		@media (max-width: 991px)
+			font-size: 14px
+			line-height: 22px
+			max-width: unset
+
 
 	&__order
 		display: flex
@@ -49,6 +76,13 @@
 		background-color: #0C144D
 		border-radius: 26px
 		margin-bottom: 200px
+		@media (max-width: 991px)
+			margin-bottom: 88px
+			padding: 26px 32px 32px 32px
+		@media (max-width: 560px)
+			padding: 24px
+			margin-bottom: 84px
+
 
 	&__text
 		font-weight: 600
@@ -56,6 +90,9 @@
 		line-height: 50px
 		color: #FFFFFF
 		max-width: 726px
+		@media (max-width: 768px)
+			font-size: 20px
+			line-height: 28px
 
 	&__dash
 		border-bottom: 2px dashed #FFFFFF
@@ -64,6 +101,8 @@
 		display: flex
 		align-items: center
 		justify-content: flex-end
+		@media (max-width: 991px)
+			display: none
 
 
 	&__number

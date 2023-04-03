@@ -78,6 +78,8 @@ $textColorTabs:  #0C144D
 		padding: 0 25px 28px 25px
 		width: calc(25% - 32px)
 		background-image: url("../images/product/price-1.png")
+		@supports (background-image: url('../images/product/price-1.webp'))
+			background-image: url('../images/product/price-1.webp')
 		background-position: top center
 		background-repeat: no-repeat
 		background-size: 400px

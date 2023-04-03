@@ -6,31 +6,72 @@
 
 	&__wrapper
 		padding: 290px 78px 94px 78px
+		@media (max-width: 991px)
+			padding: 248px 0 38px 0
 
 	&__logo
 		margin-bottom: 42px
+		@media (max-width: 560px)
+			margin-bottom: 34px
+
+	&__list-inner
+		display: flex
+		justify-content: space-between
+		gap: 40px 0
+		@media (max-width: 991px)
+			display: none
+		@media (max-width: 560px)
+			display: flex
+			flex-direction: column
+			gap: 20px 0
+
+		&--table
+			display: none
+			@media (max-width: 991px)
+				display: flex
+			@media (max-width: 560px)
+				display: none
+
 
 	&__list
 		display: flex
-		flex-wrap: wrap
+		flex-direction: column
 		gap: 40px 0
+		&--contact-mobile
+			@media (max-width: 560px)
+				margin-top: 25px
+		&--table
+			justify-content: space-between
+		@media (max-width: 991px)
+			gap: 20px 0
+
+	&__list-table
+		display: flex
+		flex-direction: column
+		gap: 20px 0
+
 
 	&__item
-		width: 25%
 		font-weight: 500
 		font-size: 22px
 		line-height: 28px
 		color: #151515
 		opacity: 0.6
+
 		&--link
 			opacity: 1
 
 	&__link-page
 		color: #151515
 		opacity: 0.6
+		white-space: nowrap
+		@media (max-width: 991px)
+			font-size: 16px
 
 	&__link
 		font-weight: 600
 		color: #0C144D
+		@media (max-width: 991px)
+			font-size: 16px
 
 

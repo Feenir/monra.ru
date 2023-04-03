@@ -8,15 +8,38 @@
 		color: #FFFFFF
 		max-width: 672px
 		margin-bottom: 70px
+		@media (max-width: 1080px )
+			font-size: 32px
+			line-height: 40px
+			margin-bottom: 44px
+		@media (max-width: 560px)
+			font-size: 24px
+			line-height: 32px
 
 	&__inner
 		background-color: #0C144D
 		border-radius: 26px
 		padding: 72px 0 90px 50px
 		background-image: url("../images/sale-10.png")
+		@supports (	background-image: url("../images/sale-10.png"))
+			background-image: url("../images/sale-10.webp")
 		background-size: contain
 		background-position: right center
 		background-repeat: no-repeat
+		@media (max-width: 1400px)
+			padding-right: 400px
+			background-image: url("../images/sale-table.png")
+			@supports (	background-image: url("../images/sale-table.png"))
+				background-image: url("../images/sale-table.webp")
+		@media (max-width: 991px)
+			padding: 32px 320px 54px 36px
+		@media (max-width: 768px)
+			background-image: url("../images/sale-mobile.png")
+			background-position: bottom
+			background-repeat: repeat-x
+			@supports (	background-image: url("../images/sale-mobile.png"))
+				background-image: url("../images/sale-mobile.webp")
+				padding: 20px 20px 200px 20px
 
 	&__wrapper
 		display: flex
@@ -52,6 +75,8 @@
 		transform: translateY(-50%)
 		transition: all .5s
 		cursor: pointer
+		@media (max-width: 1400px)
+			font-size: 14px
 
 	&__button
 		max-width: 555px
@@ -70,6 +95,9 @@
 		font-size: 22px
 		line-height: 28px
 		color: #BABABA
+		@media (max-width: 1400px)
+			font-size: 14px
+			line-height: 16px
 
 	&__fake-checkbox-round
 		display: flex
@@ -81,6 +109,10 @@
 		background-color: inherit
 		border-radius: 50%
 		margin-right: 13px
+		@media (max-width: 560px)
+			min-width: 16px
+			max-width: 16px
+			height: 16px
 		&:before
 			content: ''
 			display: block
@@ -90,9 +122,18 @@
 			border-radius: 50%
 			opacity: 0
 			transition: opacity .5s
+			@media (max-width: 560px)
+				width: 6px
+				height: 6px
 
 	&__fake-color
 		color: white
+
+	&__label, &__button
+		@media (max-width: 1400px)
+			min-height: 60px
+		@media (max-width: 768px)
+			max-width: unset
 
 
 .sale__input:focus ~ .sale__fake-input,

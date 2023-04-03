@@ -3,9 +3,23 @@
 	&__wrapper
 		display: flex
 		align-items: stretch
-		margin-bottom: 305px
+		margin-bottom: 235px
+		@media (max-width: 1440px)
+			margin-bottom: 120px
+		@media (max-width: 660px)
+			flex-direction: column
+			background: rgba(12, 20, 77, 0.1)
+			margin: 0 10px
+			border-radius: 18px
+			overflow: hidden
+
+	&__inner
+		width: 50%
+		@media (max-width: 660px)
+			width: 100%
 
 	&__left-inner
+		position: relative
 		display: flex
 		flex-direction: column
 		flex: 1 auto
@@ -14,21 +28,49 @@
 		border-bottom-right-radius: 26px
 		border-top-right-radius: 26px
 		padding: 50px 70px 90px 60px
-		max-width: 950px
-		width: 100%
+		max-width: 730px
 		margin-right: 26px
 		z-index: 10
+		&:before
+			content: ''
+			position: absolute
+			width: 100%
+			height: 100%
+			background-color: #f5f5f5
+			pointer-events: none
+			left: -100%
+			top: 0
+		@media (max-width: 1400px)
+			padding: 40px 50px 50px 12px
+		@media (max-width: 660px)
+			background-color: unset
 
 	&__title
 		font-weight: 600
 		font-size: 48px
 		line-height: 61px
 		color: #FFFFFF
-		margin-bottom: 226px
+		margin-bottom: 156px
 		max-width: 510px
+		@media (max-width: 1400px)
+			font-size: 32px
+			line-height: 40px
+			margin-bottom: 94px
+		@media (max-width: 660px)
+			font-size: 24px
+			line-height: 30px
+			padding-left: 12px
+			color: #000000
+			margin-bottom: 30px
 
 	&__logo
 		margin-bottom: 76px
+		@media (max-width: 1400px)
+			margin-bottom: 30px
+		@media (max-width: 660px)
+			margin-bottom: 42px
+			& svg path
+				fill: #000000
 
 	&__text
 		font-weight: 500
@@ -36,6 +78,11 @@
 		line-height: 28px
 		color: #FFFFFF
 		margin-bottom: 24px
+		@media (max-width: 1400px)
+			font-size: 14px
+			line-height: 22px
+		@media (max-width: 660px)
+			color: #000000
 
 	&__text-second
 		font-size: 18px
@@ -43,12 +90,20 @@
 		color: #FFFFFF
 		opacity: 0.6
 		margin-bottom: 10px
+		@media (max-width: 660px)
+			color: #000000
+			font-size: 14px
 
 	&__days
 		font-weight: 500
 		font-size: 36px
 		line-height: 28px
 		color: #FFFFFF
+		@media (max-width: 1400px)
+			font-size: 32px
+		@media (max-width: 660px)
+			color: #000000
+			font-size: 22px
 
 	&__button-inner
 		position: relative
@@ -64,16 +119,40 @@
 		max-width: 150px
 		margin-left: auto
 		z-index: 10
+		@media (max-width: 991px)
+			justify-content: flex-end
+		@media (max-width: 660px)
+			margin: 0 auto
+			justify-content: center
+			bottom: 29px
+		&--desk
+			@media (max-width: 660px)
+				display: none
 
 	&__arrow
 		max-width: 12px
 		max-height: 25px
+		@media (max-width: 660px)
+			max-width: 58px
+			max-height: 58px
 
 	&__button
 		cursor: pointer
+		&.swiper-button-disabled
+			opacity: .6
 
 	&__button-prev
 		transform: rotateY(180deg)
 		margin-right: 80px
+		@media (max-width: 991px)
+			margin-right: 50px
+
+	&__time
+		@media (max-width: 1400px)
+			margin-bottom: 20px
+
+	&__button-prev-mob
+		margin-right: 6px
+		transform: rotateY(180deg)
 
 @import "decision-right"

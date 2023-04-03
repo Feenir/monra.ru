@@ -5,28 +5,27 @@
 */
 
 const heroSlider = new Swiper(".heroSlider", {
-  slidesPerView: 1.35,
-
   navigation: {
     nextEl: ".hero__next",
     prevEl: ".hero__prev",
   },
 
   breakpoints: {
-    1024: {
-      slidesPerView: 1.25,
-      spaceBetween: 20,
+    319: {
+      slidesPerView: 2.1,
+      spaceBetween: 10,
     },
-
-
     561: {
       slidesPerView: 2,
       spaceBetween: 10,
     },
-
-    319: {
-      slidesPerView: 2.1,
-      spaceBetween: 10,
+    1024: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    1240: {
+      slidesPerView: 1.25,
+      spaceBetween: 20,
     },
   },
 });
@@ -40,16 +39,32 @@ const heroSlider = new Swiper(".heroSlider", {
 
 
 const raiseSwiper = new Swiper(".raiseSwiper", {
-  slidesPerView: 'auto',
+  centeredSlides: true,
   scrollbar: {
     el: ".raise__scrollbar",
     hide: false,
   },
-
   navigation: {
     nextEl: ".raise__next",
     prevEl: ".raise__prev",
   },
+  breakpoints: {
+    320: {
+      spaceBetween: 15,
+      centeredSlides: false,
+      slidesPerView: 1,
+    },
+    991: {
+      spaceBetween: 25,
+      centeredSlides: false,
+      slidesPerView: 2,
+    },
+    1440: {
+      spaceBetween: 25,
+      centeredSlides: true,
+      slidesPerView: 1.2,
+    },
+  }
 
 });
 
@@ -69,6 +84,7 @@ const jsDecisionRight = new Swiper(".jsDecisionRight", { // Правый сла�
   watchSlidesProgress: true,
   watchSlidesVisibility: true,
   allowTouchMove: false,
+  effect: "fade",
 });
 
 const jsDecisionLeft = new Swiper(".jsDecisionLeft", { // Левый слайдер
@@ -78,6 +94,20 @@ const jsDecisionLeft = new Swiper(".jsDecisionLeft", { // Левый слайд�
     nextEl: ".decision__button-next",
     prevEl: ".decision__button-prev",
   },
+  breakpoints: {
+    661: {
+      navigation: {
+        nextEl: ".decision__button-next",
+        prevEl: ".decision__button-prev",
+      },
+    },
+    320: {
+      navigation: {
+        nextEl: ".decision__button-next-mob",
+        prevEl: ".decision__button-prev-mob",
+      },
+    },
+   },
   thumbs: {
     swiper: jsDecisionRight,
   },

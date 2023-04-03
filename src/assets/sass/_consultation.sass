@@ -7,18 +7,40 @@
 		color: #0C144D
 		max-width: 940px
 		margin-bottom: 82px
+		@media (max-width: 991px)
+			font-size: 32px
+			line-height: 40px
+			margin-bottom: 32px
+		@media (max-width: 660px)
+			font-size: 24px
+			line-height: 30px
+			margin-bottom: 42px
 
 
 	&__wrapper
 		position: relative
 		background-color: #E2E3E8
 		border-radius: 26px
-		padding: 65px 65px 180px 65px
+		padding: 65px 65px 0 65px
 		background-image: url("../images/back-consultation.png")
-		background-size: contain
+		@supports (background-image: url('../images/back-consultation.webp'))
+			background-image: url('../images/back-consultation.webp')
+		background-size: auto
 		background-position: bottom right
 		background-repeat: no-repeat
 		margin-bottom: 215px
+		@media (max-width: 1440px)
+			background-size: 490px
+			padding: 40px 40px 0 40px
+		@media (max-width: 991px)
+			padding: 33px 33px 0 33px
+			background-size: 400px
+		@media (max-width: 660px)
+			margin-bottom: 142px
+			padding: 24px
+			background-image: none
+
+
 
 	&__inner
 		display: flex
@@ -26,9 +48,23 @@
 	&__content, &__item
 		font-weight: 500
 		font-size: 22px
+		@media (max-width: 991px)
+			font-size: 18px
+			line-height: 22px
+		@media (max-width: 660px)
+			font-size: 14px
+			line-height: 22px
 
 	&__content
 		margin-bottom: 30px
+		@media (max-width: 991px)
+			margin-bottom: 30px
+		@media (max-width: 560px)
+			margin-bottom: 18px
+
+	&__list
+		@media (max-width: 660px)
+			margin-bottom: 14px
 
 	&__item
 		display: flex
@@ -44,18 +80,35 @@
 			margin-right: 13px
 			margin-left: -17px
 			border-radius: 50%
+			@media (max-width: 660px)
+				display: none
 		&:not(:last-child)
 			margin-bottom: 10px
+			@media (max-width: 991px)
+				margin-bottom: 20px
+			@media (max-width: 5601px)
+				margin-bottom: 15px
 
 	&__climbs-box
-		position: absolute
+		position: relative
 		display: flex
 		justify-content: space-between
 		align-items: flex-end
-		width: calc(100% - 130px)
-		margin-left: 65px
+		height: 150px
 		bottom: -60px
 		left: 0
+		@media (max-width: 1440px)
+			width: calc(100% + 40px)
+			height: auto
+		@media (max-width: 991px)
+			width: calc(100% + 33px)
+			bottom: -90px
+		@media (max-width: 660px)
+			position: relative
+			flex-direction: column
+			max-height: 320px
+			width: 100%
+			bottom: 0
 
 	&__perfect
 		display: flex
@@ -65,24 +118,67 @@
 		border-radius: 20px
 		padding: 35px 45px 45px 35px
 		max-width: 700px
+		@media (max-width: 1440px)
+			flex-direction: column
+			align-items: flex-start
+			margin-right: 32px
+		@media (max-width: 991px)
+			padding: 27px
+		@media (max-width: 660px)
+			flex-direction: row
+			width: calc(100% + 34px)
+			position: relative
+			margin-right: 0
+			bottom: 0
+			padding: 14px
 
 	&__perfect-text
 		font-weight: 500
 		font-size: 22px
 		line-height: 28px
 		color: #FFFFFF
+		@media (max-width: 991px)
+			font-size: 18px
+			line-height: 22px
+		@media (max-width: 660px)
+			font-size: 14px
+			line-height: 22px
+			padding-right: 22px
 
 
 	&__perfect-svg
 		max-width: 105px
 		max-height: 105px
 		margin-right: 40px
+		@media (max-width: 1440px)
+			margin-bottom: 12px
+		@media (max-width: 991px)
+			max-width: 56px
+			max-height: 56px
+			margin-right: 12px
+		@media (max-width: 660px)
+			max-width: 33px
+			max-height: 33px
 
 	&__gager
 		max-width: 545px
 		background: #D2D3DD
 		border-radius: 20px
 		padding: 40px 90px 48px 53px
+		z-index: 10
+		@media (max-width: 991px)
+			padding: 20px 30px
+			min-width: 390px
+		@media (max-width: 768px)
+			min-width: unset
+		@media (max-width: 660px)
+			position: relative
+			margin-right: auto
+			margin-left: 0
+			padding: 13px
+			max-width: calc(100% - 40px)
+			left: -23px
+			bottom: -40px
 
 	&__gager-title
 		font-weight: 600
@@ -90,25 +186,66 @@
 		line-height: 28px
 		color: #0C144D
 		margin-bottom: 20px
+		@media (max-width: 991px)
+			font-size: 20px
+			margin-bottom: 10px
+		@media (max-width: 660px)
+			font-size: 16px
+			margin-bottom: 14px
 
 	&__gager-text
 		font-weight: 500
 		font-size: 18px
 		line-height: 28px
 		margin-bottom: 40px
+		@media (max-width: 991px)
+			font-size: 14px
+			line-height: 22px
+			margin-bottom: 20px
+		@media (max-width: 660px)
+			font-size: 12px
+			line-height: 18px
+			margin-bottom: 14px
+
 
 	&__gager-link-inner
 		display: flex
 		align-items: center
-
-
 
 	&__gager-link
 		font-weight: 600
 		font-size: 22px
 		line-height: 28px
 		color: #0C144D
+		@media (max-width: 991px)
+			font-size: 18px
+		@media (max-width: 660px)
+			font-size: 12px
 
 	&__gager-svg
 		margin-left: 13px
 		transform: translateY(2px)
+		@media (max-width: 991px)
+			max-width: 20px
+			transform: translateY(0px)
+		@media (max-width: 660px)
+			max-width: 10px
+
+	&__picture
+		display: none
+		top: -91px
+		border-bottom-right-radius: 26px
+		@media (max-width: 660px)
+			position: absolute
+			display: flex
+			align-items: flex-end
+			justify-content: flex-end
+			overflow: hidden
+			max-width: 230px
+			bottom: 0
+			right: 0
+			top: auto
+
+	&__image
+		max-width: 160px
+

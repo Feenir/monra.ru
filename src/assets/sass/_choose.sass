@@ -7,6 +7,8 @@
 		background-color: #0C144D
 		border-radius: 26px
 		background-image: url("../images/choose/kraskigroup.png")
+		@supports (background-image: url('../images/choose/kraskigroup.webp'))
+			background-image: url('../images/choose/kraskigroup.webp')
 		background-repeat: no-repeat
 		min-height: 645px
 		margin-bottom: 120px
@@ -17,9 +19,13 @@
 			background-position: right bottom
 			padding: 50px 85px 435px 40px
 			background-image: url("../images/choose/kraskigroup-table.png")
+			@supports (	background-image: url("../images/choose/kraskigroup-table.webp"))
+				background-image: url("../images/choose/kraskigroup-table.webp")
 		@media (max-width: 560px)
 			padding: 20px 20px 250px 20px
 			background-image: url("../images/choose/kraskigroup-mobile.png")
+			@supports (	background-image: url("../images/choose/kraskigroup-mobile.webp"))
+				background-image: url("../images/choose/kraskigroup-mobile.webp")
 			background-size: contain
 
 

@@ -1,7 +1,16 @@
 .hero
 
-	&__slider
+	&__container
+		@media (max-width: 1440px)
+			padding-right: 15%
 		@media (max-width: 991px)
+			padding-right: 0
+
+	&__slider
+		@media (max-width: 1600px)
+			width: 50%
+		@media (max-width: 991px)
+			width: 100%
 			position: relative
 			margin-bottom: 35px
 
@@ -90,11 +99,12 @@
 		margin-left: 0
 		@media (max-width: 991px)
 			padding-bottom: 0
+			max-width: unset
 
 	&__swiper-slide
 		min-height: 624px
 		width: 100%
-		background-image: url("../images/hero/slider/hero-slider-1.png")
+		background-image: url("../images/hero/slider/hero-slider-2.png")
 		background-repeat: no-repeat
 		background-size: cover
 		background-position: center bottom

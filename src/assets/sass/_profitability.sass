@@ -11,6 +11,10 @@
 			line-height: 40px
 			max-width: unset
 			margin-bottom: 45px
+		@media (max-width: 768px)
+			font-size: 24px
+			margin-bottom: 24px
+			line-height: 30px
 
 	&__text
 		font-weight: 500
@@ -19,8 +23,17 @@
 		margin-bottom: 55px
 		max-width: 640px
 		color: #000000
+		@media (max-width: 768px)
+			font-size: 14px
+			line-height: 22px
+			margin-bottom: 60px
 		&:nth-child(2)
 			font-size: 24px
+			@media (max-width: 768px)
+				font-size: 18px
+				line-height: 22px
+				margin-bottom: 30px
+
 
 	&__wrapper
 		display: flex
@@ -29,6 +42,8 @@
 		@media (max-width: 1440px)
 			flex-direction: column
 			align-items: flex-start
+		@media (max-width: 991px)
+			margin-bottom: 56px
 
 	&__box
 		width: 50%
@@ -38,10 +53,14 @@
 			align-self: flex-end
 			@media (max-width: 1440px)
 				display: none
+			@media (max-width: 790px)
+				display: block
 
 	&__box-inner
 		display: flex
 		flex-direction: column
+		@media (max-width: 560px)
+			max-height: 240px
 
 	&__box-back
 		position: relative
@@ -53,6 +72,8 @@
 			gap: 0 95px
 			margin-bottom: 75px
 			justify-content: space-between
+		@media (max-width: 560px)
+			gap: 0 10px
 		&:before
 			position: absolute
 			display: block
@@ -72,8 +93,11 @@
 		flex-direction: column
 		justify-content: space-between
 		align-items: center
+		width: 50%
 		@media (max-width: 1440px)
 			flex-direction: column-reverse
+		@media (max-width: 790px)
+			justify-content: flex-end
 
 	&__barrel-text
 		text-align: center
@@ -83,6 +107,15 @@
 		color: rgba(0, 0, 0, .6)
 		max-width: 290px
 		margin: 0 auto
+		&--left
+			@media (max-width: 768px)
+				text-align: left
+		&--right
+			@media (max-width: 768px)
+				text-align: right
+		@media (max-width: 768px)
+			font-size: 10px
+			line-height: 16px
 		&--table
 			display: none
 			font-weight: 600
@@ -92,16 +125,30 @@
 			@media (max-width: 1440px)
 				display: block
 				text-align: left
+			@media (max-width: 791px)
+				display: none
 
-	&__img
-		& img
-			max-width: 455px
-			min-height: 460px
-			@media (max-width: 1440px)
-				min-height: 440px
-				max-width: 390px
-				width: 100%
-				object-fit: cover
+	&__barrel-picture
+		display: flex
+		align-items: center
+		justify-content: center
+		&--right
+			max-width: 350px
+
+	&__barrel-image
+		width: 100%
+		min-height: 460px
+		@media (max-width: 1440px)
+			min-height: 440px
+			max-width: 390px
+			width: 100%
+			object-fit: cover
+		@media (max-width: 991px)
+			min-height: 380px
+		@media (max-width: 768px)
+			min-height: 280px
+		@media (max-width: 560px)
+			min-height: 165px
 
 	&__button
 		min-height: 85px
@@ -113,7 +160,15 @@
 			display: none
 			@media (max-width: 1440px)
 				display: flex
+				min-height: 70px
 				width: 100%
+			@media (max-width: 991px)
+				min-height: 60px
+				font-size: 14px
+			@media (max-width: 560px)
+				min-height: 50px
+				font-size: 12px
+
 
 
 

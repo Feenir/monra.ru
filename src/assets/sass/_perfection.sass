@@ -7,6 +7,8 @@
 		color: #000000
 		max-width: 700px
 		margin-bottom: 80px
+		@media (max-width: 1124px)
+			display: none
 
 
 	&__wrapper
@@ -14,6 +16,10 @@
 		flex-wrap: wrap
 		gap: 16px
 		margin-bottom: 124px
+		@media (max-width: 1124px)
+			margin-bottom: 88px
+		@media (max-width: 660px)
+			margin-bottom: 62px
 
 	&__item
 		display: flex
@@ -25,9 +31,17 @@
 		&--top
 			width: 100%
 			padding: 80px 42px 50px 42px
+			@media (max-width: 1124px)
+				padding: 48px 76px 80px 60px
+			@media (max-width: 991px)
+				padding: 46px
+			@media (max-width: 660px)
+				padding: 46px 24px
 		&--second
 			position: relative
 			background-image: url("../images/perfection/perfection.jpg")
+			@supports (background-image: url('../images/perfection/perfection.webp'))
+				background-image: url('../images/perfection/perfection.webp')
 			background-size: cover
 			background-position: center
 			background-repeat: no-repeat
@@ -49,24 +63,64 @@
 			& .perfection__item-text
 				max-width: 590px
 
+		&--mobile
+			display: none
+			width: 100%
+			padding: 36px 36px 44px 40px
+			@media (max-width: 1124px)
+				display: flex
+			@media (max-width: 660px)
+				padding: 24px
+			& .perfection__title
+				font-size: 32px
+				line-height: 40px
+				@media (max-width: 1124px)
+					display: flex
+				@media (max-width: 660px)
+					margin-bottom: 25px
+					font-size: 24px
+					line-height: 32px
+
+
+		&--second, &--third
+			@media (max-width: 1124px)
+				display: none
+
+
 
 	&__box-inner
 		display: flex
 		align-items: flex-start
 		justify-content: space-between
+		@media (max-width: 1600px)
+			flex-wrap: wrap
+			gap: 40px
+		@media (max-width: 660px)
+			gap: 15px
 		& > *
 			width: 25%
+			@media (max-width: 1600px)
+				width: calc(50% - 20px)
+			@media (max-width: 768px)
+				width: 100%
+
+
+
 
 	&__box
 		display: flex
 		flex-direction: column
 		align-items: flex-start
 		&:nth-child(1)
-			margin-right: 205px
+			margin-right: 12.75rem
 		&:nth-child(2)
-			margin-right: 90px
+			margin-right: 5.63rem
 		&:nth-child(3)
-			margin-right: 76px
+			margin-right: 4.75rem
+		&:nth-child(-n+4)
+			@media (max-width: 1600px)
+				margin-right: 0
+
 
 	&__item-text
 		font-weight: 600
@@ -80,6 +134,11 @@
 		line-height: 100px
 		color: #0C144D
 		margin-bottom: 17px
+		@media (max-width: 1124px)
+			font-size: 80px
+		@media (max-width: 660px)
+			font-size: 40px
+			line-height: 40px
 
 	&__box-text
 		font-weight: 500
@@ -87,8 +146,56 @@
 		line-height: 28px
 		color: #2E2E2E
 		opacity: 0.7
+		@media (max-width: 1124px)
+			font-size: 16px
+			line-height: 22px
+		@media (max-width: 660px)
+			font-size: 12px
+
 		&--long
 			min-width: 320px
+
+
+	&__mobile-inner
+		display: flex
+		align-items: stretch
+		justify-content: space-between
+		gap: 0 54px
+		@media (max-width: 660px)
+			flex-wrap: wrap
+			gap: 0
+
+	&__box-mobile
+		width: calc(50% - 27px)
+		@media (max-width: 660px)
+			width: 100%
+
+	&__mobile-text
+		font-weight: 500
+		font-size: 14px
+		line-height: 22px
+		color: #2E2E2E
+		@media (max-width: 660px)
+			font-size: 12px
+			line-height: 20px
+		&:not(:last-child)
+			margin-bottom: 25px
+			@media (max-width: 660px)
+				margin-bottom: 15px
+		& br
+			@media (max-width: 660px)
+				display: none
+		&--other
+			font-weight: 600
+			font-size: 20px
+			line-height: 30px
+			color: #0C144D
+			@media (max-width: 660px)
+				margin-top: 40px
+				font-size: 16px
+				line-height: 24px
+
+
 
 
 

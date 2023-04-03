@@ -1,15 +1,28 @@
 .task
 	margin-bottom: 450px
+	@media (max-width: 991px)
+		margin-bottom: 520px
+	@media (max-width: 660px)
+		margin-bottom: 70px
 	&__title
 		font-weight: 600
 		font-size: 48px
 		line-height: 61px
 		color: #000000
 		margin-bottom: 95px
+		@media (max-width: 1440px)
+			font-size: 32px
+			line-height: 40px
+			margin-bottom: 30px
+		@media (max-width: 560px)
+			font-size: 24px
+			line-height: 30px
 
 	&__wrapper
 		position: relative
 		display: flex
+		@media (max-width: 660px)
+			flex-direction: column
 
 	&__box-in
 		width: 100%
@@ -21,22 +34,55 @@
 		align-items: flex-end
 		border-radius: 26px
 		background-image: url("../images/task/taks-left.jpg")
+		@supports (background-image: url('../images/task/taks-left.webp'))
+			background-image: url('../images/task/taks-left.webp')
 		background-size: cover
 		background-position: center center
 		background-repeat: no-repeat
 		overflow: hidden
 		padding: 0 280px 75px 58px
-		height: 950px
+		height: calc((100vw - 1030px) / .5)
+		max-height: 880px
+		@media (max-width: 1600px)
+			width: 80vw
+			max-width: 50%
+		@media (max-width: 1440px)
+			min-height: 680px
+		@media (max-width: 991px)
+			min-height: 460px
+			min-width: 53%
+		@media (max-width: 560px)
+			padding: 0 30px 20px 20px!important
+			min-height: 320px
 		&:nth-child(1)
 			z-index: 5
 			max-width: 880px
+			@media (max-width: 1440px)
+				padding: 0 110px 75px 30px
+			@media (max-width: 991px)
+				padding: 0 82px 24px 34px
+			@media (max-width: 660px)
+				min-width: unset
+				width: 100%
+				margin-bottom: 32px
 		&:nth-child(2)
 			position: absolute
 			max-width: 880px
 			background-image: url("../images/task/taks-right.jpg")
+			@supports (background-image: url('../images/task/taks-right.webp'))
+				background-image: url('../images/task/taks-right.webp')
 			z-index: 6
 			right: 0
 			padding: 0 50px 75px 50px
+			@media (max-width: 1440px)
+				margin-right: 10px
+				width: 60%
+			@media (max-width: 991px)
+				padding: 0 68px 20px 42px
+				bottom: calc(-100% + 30px)
+			@media (max-width: 660px)
+				position: relative
+				width: 100%
 		&:before
 			position: absolute
 			content: ''
@@ -54,7 +100,12 @@
 		color: #FFFFFF
 		position: relative
 		z-index: 10
-
+		@media (max-width: 1440px)
+			font-size: 24px
+			line-height: 30px
+		@media (max-width: 660px)
+			font-size: 14px
+			line-height: 22px
 
 	&__box-text
 		font-weight: 500
@@ -63,6 +114,30 @@
 		text-align: right
 		color: #2E2E2E
 		margin-bottom: 110px
+		& br
+			@media (max-width: 1440px)
+				display: none
+		@media (max-width: 1440px)
+			line-height: 22px
+			margin-left: 20px
+			margin-right: 10px
+		@media (max-width: 991px)
+			margin-left: 0
+			text-align: left
+			font-size: 14px
+			line-height: 22px
+			margin-bottom: 78px
+			max-width: 406px
+		@media (max-width: 560px)
+			max-width: unset
+			margin-bottom: 48px
+		&--desk
+			@media (max-width: 991px)
+				display: none
+		&--table
+			display: none
+			@media (max-width: 991px)
+				display: block
 
 
 

@@ -14,6 +14,8 @@
 		background-color: #0C144D
 		border-radius: 26px
 		background-image: url("../images/catalog/wood.png")
+		@supports (background-image: url('../images/catalog/wood.webp'))
+			background-image: url('../images/catalog/wood.webp')
 		background-size: contain
 		background-position: bottom right
 		background-repeat: no-repeat
@@ -23,10 +25,14 @@
 			padding: 20px 40px 250px 15px
 			background-position: bottom center
 			background-image: url("../images/catalog/wood-table.png")
+			@supports (background-image: url('../images/catalog/wood-table.webp'))
+				background-image: url('../images/catalog/wood-table.webp')
 			min-height: 470px
 			background-size: cover
 		@media (max-width: 560px)
 			background-image: url("../images/catalog/wood-moob.png")
+			@supports (background-image: url('../images/catalog/wood-moob.webp'))
+				background-image: url('../images/catalog/wood-moob.webp')
 			background-size: 100% 100%
 
 

@@ -3,6 +3,9 @@
 	margin: 0
 	box-sizing: border-box
 
+html
+	overflow-x: hidden
+
 body
 	font-family: 'Manrope', sans-serif
 	background-color: #F5F5F5
@@ -13,6 +16,8 @@ body
 h1
 	font-size: calc(36px + 36 * ((100vw - 320px) / (1920 - 320)))
 	line-height: 76px
+	@media (min-width: 1920px)
+		font-size: 72px
 	@media (max-width: 991px)
 		line-height: 52px
 	@media (max-width: 560px)
@@ -157,29 +162,51 @@ li
 	@media (max-width: 560px)
 		display: none
 
-.loop-animation
-	animation: loop-animation
-	animation-duration: 20s
-	animation-iteration-count: 1
-	animation-timing-function: linear
 
-.loop-animation-1
-	animation-name: loop-animation-1
-	animation-duration: 20s
-	animation-iteration-count: infinite
-	animation-timing-function: linear
-
-@keyframes loop-animation
-	0%
-		transform: translateX(0)
-
-	100%
-		transform: translateX(-100vh)
 
 .steps-warning
 	color: red!important
 	& > *
 		color: red!important
+
+picture
+	width: 100%
+	height: 100%
+
+.shadow-slide
+	position: absolute
+	width: 100%
+	height: 100%
+	bottom: 0
+	left: 0
+	&:before, &:after
+		position: absolute
+		content: ''
+		display: block
+		width: 320px
+		height: 370px
+		background: linear-gradient(135.09deg, rgba(0, 0, 0, 0.35) 2.14%, rgba(0, 0, 0, 0) 44.68%)
+		opacity: 0.5
+		filter: blur(0.364312px)
+		@media (max-width: 660px)
+			width: 90px
+			height: 105px
+	&:before
+		width: 100px
+		height: 210px
+		left: 60px
+		bottom: -150px
+		transform: rotate(-38deg)
+	&:after
+		transform: rotate(45deg)
+		top: 60px
+		right: -130px
+		@media (max-width: 660px)
+			top: 20px
+			right: -30px
+
+
+
 
 
 
